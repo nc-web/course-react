@@ -1,25 +1,23 @@
 
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
 
-
-function ButtonProps(props) {
-    return(
-        <Fragment>
-            <h2> Megusta :</h2>
-            <h2> { props.numero } </h2>
-        </Fragment>
-    );
+function ButtonProps (props) {
+  return (
+    <>
+      <h2> Megusta :</h2>
+      <h2> {props.numero} </h2>
+    </>
+  )
 }
 
+function ModPropsMismoArchivo () {
+  return (
+    <>
 
-function ModPropsMismoArchivo() {
-    return(
-        <Fragment>
+      <ButtonProps />
 
-          <ButtonProps />
-
-        </Fragment>
-    );
+    </>
+  )
 }
 
-export default ModPropsMismoArchivo;
+export default ModPropsMismoArchivo

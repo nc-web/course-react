@@ -1,26 +1,23 @@
 
-import React from "react";
+import React, { useState } from 'react'
 
 // Componente Hola Mundo
 
-function HolaMundo() {
+function HolaMundo () {
+  return (
 
-    return (
+    <div>
+      <nav>
+        <ul>
+          <li> <a href=''> Inicio </a></li>
+          <li> <a href=''> Mundo </a></li>
+        </ul>
+      </nav>
 
-        <div>
-            <nav>
-                <ul>
-                    <li> <a href=""> Inicio </a></li>
-                    <li> <a href=""> Mundo </a></li>
-                </ul>
-            </nav>
+      <h2> !!! Hola Mundo !!! </h2>
+    </div>
 
-
-            <h2> !!! Hola Mundo !!! </h2>
-        </div>
-         
-    );
-
+  )
 }
 
-export default HolaMundo;
+export default HolaMundo

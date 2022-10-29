@@ -2,11 +2,11 @@
 import React, { Fragment } from 'react'
 
 const LogOut = () => {
-    return (
-        <Fragment>
-            <h4> LogOut </h4>
-        </Fragment>
-    )
+  return (
+    <>
+      <h4> LogOut </h4>
+    </>
+  )
 }
 
 export default LogOut

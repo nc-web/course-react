@@ -1,14 +1,10 @@
 
-import React from 'react';
+import React from 'react'
 
-
-function ChaoMundo() {
-
-    return(
-        <h3> !! Chao Mundo Cruel !!</h3>
-    )
-
+function ChaoMundo () {
+  return (
+    <h3> !! Chao Mundo Cruel !!</h3>
+  )
 }
 
-
-export default ChaoMundo;
+export default ChaoMundo

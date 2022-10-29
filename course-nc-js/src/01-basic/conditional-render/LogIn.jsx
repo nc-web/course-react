@@ -2,11 +2,11 @@
 import React, { Fragment } from 'react'
 
 const LogIn = () => {
-    return (
-        <Fragment>
-            <h4> LogIn </h4>
-        </Fragment>
-    )
+  return (
+    <>
+      <h4> LogIn </h4>
+    </>
+  )
 }
 
 export default LogIn

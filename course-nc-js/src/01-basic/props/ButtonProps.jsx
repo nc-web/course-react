@@ -1,12 +1,12 @@
 
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
 
-function ButtonProps(props) {
-    return(
-        <Fragment>
-            <button> { props.texto } </button>
-        </Fragment>
-    );
-} 
+function ButtonProps (props) {
+  return (
+    <>
+      <button> {props.texto} </button>
+    </>
+  )
+}
 
-export default ButtonProps;
+export default ButtonProps

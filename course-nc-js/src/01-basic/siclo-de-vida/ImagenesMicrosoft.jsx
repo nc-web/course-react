@@ -1,48 +1,43 @@
 
-import React, { Component } from "react";
-
-
+import React, { Component } from 'react'
 
 class ImagenesMicrosoft extends Component {
-
-  constructor(...props) {
-    super(...props);
-    this.state = { attitude: "feliz", repos: [], rndPhoto: "" };
+  constructor (...props) {
+    super(...props)
+    this.state = { attitude: 'feliz', repos: [], rndPhoto: '' }
   }
 
-  
-  componentDidMount() {
-    fetch("https://api.github.com/users/Encamina/repos")
+  componentDidMount () {
+    fetch('https://api.github.com/users/Encamina/repos')
       .then(response => response.json())
       .then(resp => this.setState({ repos: resp }))
-      .catch(err => console.log(err.message));
+      .catch(err => console.log(err.message))
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate (prevProps, prevState) {
     if (prevState.attitude !== this.state.attitude) {
-      fetch(`https://source.unsplash.com/featured/?microsoft`)
+      fetch('https://source.unsplash.com/featured/?microsoft')
         .then(response => {
-          this.setState({ rndPhoto: response.url });
+          this.setState({ rndPhoto: response.url })
         })
-        .catch(err => console.log(err.message));
+        .catch(err => console.log(err.message))
     }
   }
 
-  changeStatus() {
-    const { attitude } = this.state;
-    attitude === "feliz"
-      ? this.setState({ attitude: "contento" })
-      : this.setState({ attitude: "feliz" });
+  changeStatus () {
+    const { attitude } = this.state
+    attitude === 'feliz'
+      ? this.setState({ attitude: 'contento' })
+      : this.setState({ attitude: 'feliz' })
   }
 
-  render() {
-
-    const { attitude, repos, rndPhoto } = this.state;
+  render () {
+    const { attitude, repos, rndPhoto } = this.state
 
     return (
       <div>
-        <div >
-          <h1  > Piensa en colores </h1>
+        <div>
+          <h1> Piensa en colores </h1>
           <h2>Nuestro Rodolfo hoy está {attitude}.</h2>
           <button onClick={() => this.changeStatus()}>Cambiar estado</button>
           <hr />
@@ -54,12 +49,11 @@ class ImagenesMicrosoft extends Component {
           ))}
         </ul>
         <hr />
-        <img id="photo" alt="imagen random" src={rndPhoto} />
+        <img id='photo' alt='imagen random' src={rndPhoto} />
         <hr />
       </div>
-    );
-
+    )
   }
 }
 
-export default ImagenesMicrosoft;
+export default ImagenesMicrosoft

@@ -1,17 +1,16 @@
 
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
 
 // Componentes NC
-import Menu from '1-basic/routes/Nav';
-
+import Menu from '1-basic/routes/Nav'
 
 function PaginaInicio () {
-    return(
-        <Fragment>
-                <Menu />
-                <h2> Pagina Inicio </h2>
-        </Fragment> 
-    );
+  return (
+    <>
+      <Menu />
+      <h2> Pagina Inicio </h2>
+    </>
+  )
 }
 
-export default PaginaInicio;
+export default PaginaInicio

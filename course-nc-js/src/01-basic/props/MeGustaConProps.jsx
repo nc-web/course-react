@@ -1,24 +1,21 @@
 
+import React, { Fragment } from 'react'
 
-import React, { Fragment } from 'react';
+function ModPropsMismoArchivo (props) {
+  const incrementar = () => {
+    this.props.like({ like: this.props.like + 1 })
+  }
 
+  return (
+    <>
 
-function ModPropsMismoArchivo(props) {
+      <h2>Me gusta : </h2>
+      <h2> {props.like} </h2>
 
-    const incrementar = () => {
-        this.props.like({ like: this.props.like + 1 })
-    }
+      <button onClick={incrementar}> Me gusta </button>
 
-    return(
-        <Fragment>
-
-          <h2>Me gusta : </h2>
-          <h2> {props.like} </h2>
-          
-          <button onClick={incrementar} > Me gusta </button>
-
-        </Fragment>
-    );
+    </>
+  )
 }
 
-export default ModPropsMismoArchivo;
+export default ModPropsMismoArchivo

@@ -1,22 +1,20 @@
 
-import React, { Fragment } from 'react';
-
+import React, { Fragment } from 'react'
 
 const ButtonStyle = () => {
-    return(
-        <Fragment>
-            <button > Boton con estilo </button>
-        </Fragment>
-    );
-} 
-
-
-function ModPropsMismoArchivoStyle() {
-    return(
-        <Fragment>
-            <ButtonStyle />
-        </Fragment>
-    );
+  return (
+    <>
+      <button> Boton con estilo </button>
+    </>
+  )
 }
 
-export default ModPropsMismoArchivoStyle;
+function ModPropsMismoArchivoStyle () {
+  return (
+    <>
+      <ButtonStyle />
+    </>
+  )
+}
+
+export default ModPropsMismoArchivoStyle

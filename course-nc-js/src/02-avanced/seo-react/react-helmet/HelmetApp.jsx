@@ -2,11 +2,9 @@
 import React from 'react'
 
 const HelmetApp = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <div />
+  )
 }
 
 export default HelmetApp
