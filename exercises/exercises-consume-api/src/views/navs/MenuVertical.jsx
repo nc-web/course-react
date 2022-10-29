@@ -20,7 +20,8 @@ import Button from '@components/button'
 import { mdiHome } from '@mdi/js';
 
 // Utils
-import { device } from '@components/assets/utils/divice'
+//import { device } from '@components/assets/utils/divice'
+import { device } from '../../components/assets/utils/device'
 
 
 // ======================= STYLES =======================

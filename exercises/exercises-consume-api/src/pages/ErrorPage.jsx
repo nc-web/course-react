@@ -10,6 +10,7 @@ import H6 from '@components/h6'
 import A from '@components/a'
 import Button from '@components/button'
 
+
 const ErrorPage = () => {
     return (
         <>

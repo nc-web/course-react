@@ -18,7 +18,8 @@ import Input from '@components/input'
 import { mdiHome } from '@mdi/js'
 
 // Utils
-import { device } from '@components/assets/utils/divice'
+//import { device } from '@components/assets/utils/divice'
+import { device } from '../../components/assets/utils/device/index'
 
 
 const ButtonDefaultStyles = css`
@@ -38,7 +39,9 @@ const ButtonDefaultStyles = css`
 `
 
 
-const Menu = styled(FlexContainer)`
+const Menu = styled(Div)`
+
+    display: flex;
 
     /* =============== DESKTOP =============== */
     @media ${device.desktop} {

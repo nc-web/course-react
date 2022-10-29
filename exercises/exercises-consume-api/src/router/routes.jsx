@@ -1,7 +1,7 @@
 
 import {  } from 'react'
 
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Navigate, Route } from 'react-router-dom'
 
 // Routes
 import PageMenuInicio from '@pages/MenuInicio'
@@ -16,13 +16,15 @@ const routes = () => {
     return (
         <>
             <Router>
-                <Switch>
-                    <Redirect exact from='/' to='/menu-inicio' component={ PageMenuInicio } />
-                    <Route exact path='/menu-inicio' component={ PageMenuInicio } />
-                    <Route exact path='/api-pokemons' component={ PageAPIPokemons } />
-                    <Route exact path='/api-rick-morty' component={ PageAPIRickAndMorty }  />
-                    <Route component={ PageError } exact />
-                </Switch>
+                <Routes>
+                    <Route exact from='/' to='/menu-inicio' element={ PageMenuInicio } >
+                        {/* <Navigate exact from='/' to='/menu-inicio' component={ PageMenuInicio } /> */}
+                        <Route exact path='/menu-inicio' element={ PageMenuInicio } />
+                        <Route exact path='/api-pokemons' element={ PageAPIPokemons } />
+                        <Route exact path='/api-rick-morty' element={ PageAPIRickAndMorty }  />
+                        <Route element={ PageError } exact />
+                    </Route>
+                </Routes>
             </Router>
         </>  
     )

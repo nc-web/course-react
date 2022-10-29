@@ -15,7 +15,8 @@ import H4 from '@components/h4'
 import { mdiHome } from '@mdi/js'
 
 
-const Card = styled(GridContainer)`
+const Card = styled(Div)`
+    display: grid;
     background-color: #5E5E5E;
     padding: 10px;
     width: 203px;
@@ -28,7 +29,6 @@ const Card = styled(GridContainer)`
         box-shadow: 2px 3px 1px 1px #A2BD00;
     }
 `
-
 
 
 const CardContadorHoras = () => {
