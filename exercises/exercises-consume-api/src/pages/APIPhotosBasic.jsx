@@ -1,12 +1,12 @@
 
-import {  } from 'react'
+import { } from 'react'
 
 const APIPhotosBasic = () => {
-    return (
-        <>
-            
-        </>
-    )
+  return (
+    <>
+
+    </>
+  )
 }
 
 export default APIPhotosBasic

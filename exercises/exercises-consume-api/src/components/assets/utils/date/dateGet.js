@@ -199,9 +199,7 @@ export const dateGetFormatNameDayPlusEN = () => {
   return dateFormatNameEN
 }
 
-
 export const dateGetDayES = () => {
-  
   // Fecha
   const newDate = new Date()
   // const date = newDate.getDate()

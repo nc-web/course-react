@@ -17,12 +17,11 @@ import H6 from '@components/h6'
 import Button from '@components/button'
 
 // Icons
-import { mdiHome } from '@mdi/js';
+import { mdiHome } from '@mdi/js'
 
 // Utils
-//import { device } from '@components/assets/utils/divice'
+// import { device } from '@components/assets/utils/divice'
 import { device } from '../../components/assets/utils/device'
-
 
 // ======================= STYLES =======================
 
@@ -53,7 +52,6 @@ const ButtonDefaultStyles = css`
         //background-color: rgba(255, 255, 255, .1)
     }
 `
-
 
 const Menu = Styled(Div)`
 
@@ -192,83 +190,83 @@ const Menu = Styled(Div)`
 `
 
 const MenuVertical = () => {
+  const [isMobile, setIsMobile] = useState(false)
 
-    const [isMobile, setIsMobile] = useState(false);
+  return (
+    <>
+      <Menu>
 
-    return (
-        <>
-            <Menu>
+        <Div displayGrid marginT5 jcCenter>
+          <FontAwesomeIcon icon={faReact} color='#1E88E5' size='4x' />
+        </Div>
 
-                <Div displayGrid marginT5 jcCenter>
-                    <FontAwesomeIcon icon={faReact} color='#1E88E5' size='4x' />
-                </Div>
+        <Div displayGrid marginY4 jcCenter>
+          <H4 textWhite jcCenter> MENU </H4>
+          <H6 textWhite> REACT HOOKS </H6>
+        </Div>
 
-                <Div displayGrid marginY4 jcCenter>
-                    <H4 textWhite jcCenter> MENU </H4>
-                    <H6 textWhite> REACT HOOKS </H6>
-                </Div>
+        <Ul className={isMobile ? 'nav__menu_mobile' : 'nav__menu'} onClick={() => setIsMobile(false)}>
 
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link to='/menu-inicio' className='nav__menu_link'><Li className='nav__menu_li'><A> Menu inicio </A></Li></Link>
+          </Div>
 
-                <Ul className={isMobile ? "nav__menu_mobile" : "nav__menu"} onClick={() => setIsMobile(false)}>
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link to='/api-pokemons' className='nav__menu_link'><Li className='nav__menu_li'><A> API Pokemons </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link to="/menu-inicio" className="nav__menu_link"><Li className="nav__menu_li"><A> Menu inicio </A></Li></Link>
-                    </Div>
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link to='/api-rick-morty' className='nav__menu_link'><Li className='nav__menu_li'><A> API rick and morty </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link to="/api-pokemons" className="nav__menu_link"><Li className="nav__menu_li"><A> API Pokemons </A></Li></Link>
-                    </Div>
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link to='/contador-horas' className='nav__menu_link'><Li className='nav__menu_li'><A> Contador horas </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link to="/api-rick-morty" className="nav__menu_link"><Li className="nav__menu_li"><A> API rick and morty </A></Li></Link>
-                    </Div>
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link to='#' className='nav__menu_link'><Li className='nav__menu_li'><A> Todo list basic </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link to="/contador-horas" className="nav__menu_link"><Li className="nav__menu_li"><A> Contador horas </A></Li></Link>
-                    </Div>
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link to='#' className='nav__menu_link'><Li className='nav__menu_li'><A> Instalar dependencias </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link to="#" className="nav__menu_link"><Li className="nav__menu_li"><A> Todo list basic </A></Li></Link>
-                    </Div>
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link to='#' className='nav__menu_link'><Li className='nav__menu_li'><A> Crear carpetas </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link to="#" className="nav__menu_link"><Li className="nav__menu_li"><A> Instalar dependencias </A></Li></Link>
-                    </Div>
+          <Div displayFlex aiCenter marginY1>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+            <Link href='#' className='nav__menu_link'><Li className='nav__menu_li'><A> Archivos de configuracion </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link to="#" className="nav__menu_link"><Li className="nav__menu_li"><A> Crear carpetas </A></Li></Link>
-                    </Div>
+          <Div displayFlex aiCenter marginY1>
+            <FontAwesomeIcon icon={faColumns} color='#A2BD00' />
+            <Link href='#' className='nav__menu_link'><Li className='nav__menu_li'><A> Iniciar maquetacion </A></Li></Link>
+          </Div>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        <Link href="#" className="nav__menu_link"><Li className="nav__menu_li"><A> Archivos de configuracion </A></Li></Link>
-                    </Div>
+        </Ul>
 
-                    <Div displayFlex aiCenter marginY1>
-                        <FontAwesomeIcon icon={faColumns} color='#A2BD00' />
-                        <Link href="#" className="nav__menu_link"><Li className="nav__menu_li"><A> Iniciar maquetacion </A></Li></Link>
-                    </Div>
+        <Button className='nav__btn' onClick={() => setIsMobile(!isMobile)}>
+          {isMobile
+            ? (
+              <Img className='nav__btn_img_close' src={faTimes} alt='' />
+              )
+            : (
+              <Img className='nav__btn_img_bar' src={faBars} alt='' />
+              )}
+        </Button>
 
-                </Ul>
-
-                <Button className="nav__btn" onClick={() => setIsMobile(!isMobile)}>
-                    {isMobile ? (
-                        <Img className="nav__btn_img_close" src={faTimes} alt="" />
-                    ) : (
-                        <Img className="nav__btn_img_bar" src={faBars} alt="" />
-                    )}
-                </Button>
-
-            </Menu>
-        </>
-    )
+      </Menu>
+    </>
+  )
 }
 
 export default MenuVertical

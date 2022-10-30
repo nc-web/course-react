@@ -1,5 +1,5 @@
 
-import {  } from 'react'
+import { } from 'react'
 import styled from 'styled-components'
 import Icon from '@mdi/react'
 
@@ -13,7 +13,6 @@ import H4 from '@components/h4'
 
 // Icons
 import { mdiHome } from '@mdi/js'
-
 
 const Card = styled(Div)`
     display: grid;
@@ -30,24 +29,23 @@ const Card = styled(Div)`
     }
 `
 
-
 const CardContadorHoras = () => {
-    return (
-        <>
-            <Link to="/api-pokemons">
-                    <Card>
-                        <Div displayGrid jcCenter marginAuto>
-                            <Icon src={mdiHome} size={1} color='#A2BD00' />
-                        </Div>
+  return (
+    <>
+      <Link to='/api-pokemons'>
+        <Card>
+          <Div displayGrid jcCenter marginAuto>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+          </Div>
 
-                        <Div displayGrid>
-                            <H2 textGray200 > API Pokemons </H2>
-                            <H4 textGray200 lighter> useState - useEffect </H4>
-                        </Div>
-                    </Card>
-            </Link>
-        </>
-    )
+          <Div displayGrid>
+            <H2 textGray200> API Pokemons </H2>
+            <H4 textGray200 lighter> useState - useEffect </H4>
+          </Div>
+        </Card>
+      </Link>
+    </>
+  )
 }
 
 export default CardContadorHoras

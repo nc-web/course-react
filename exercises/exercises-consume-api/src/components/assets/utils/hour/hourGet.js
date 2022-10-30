@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react'
 
-
 export const hourGet = () => {
   const dateTemp = new Date()
   const hour = dateTemp.getHours()
@@ -12,7 +11,6 @@ export const hourGet = () => {
 
   return hourMinutSecons
 }
-
 
 export const hourGetInterval = () => {
   const [dateTime, setDateTime] = useState(new Date())

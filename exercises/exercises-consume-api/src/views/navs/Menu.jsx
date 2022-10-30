@@ -18,9 +18,8 @@ import Input from '@components/input'
 import { mdiHome } from '@mdi/js'
 
 // Utils
-//import { device } from '@components/assets/utils/divice'
+// import { device } from '@components/assets/utils/divice'
 import { device } from '../../components/assets/utils/device/index'
-
 
 const ButtonDefaultStyles = css`
     font-size: .9rem;
@@ -37,7 +36,6 @@ const ButtonDefaultStyles = css`
         //background-color: rgba(255, 255, 255, .1)
     }
 `
-
 
 const Menu = styled(Div)`
 
@@ -183,44 +181,42 @@ const Menu = styled(Div)`
 `
 // ======================= STYLES =======================
 
-
-
 const MenuSearch01 = () => {
+  const [isMobile, setIsMobile] = useState(false)
 
-    const [isMobile, setIsMobile] = useState(false);
+  return (
+    <>
+      <Menu jcSpaceBetween bgGray800>
 
-    return (
-        <>
-            <Menu jcSpaceBetween bgGray800>
+        <Ul className='nav__logo'>
+          <Img src='https://bucket-nc-images.s3.amazonaws.com/nc/logos/nc/imagotipo/imagotipo-nc.png' />
+        </Ul>
 
-                <Ul className="nav__logo">
-                    <Img src='https://bucket-nc-images.s3.amazonaws.com/nc/logos/nc/imagotipo/imagotipo-nc.png'/>
-                </Ul>
+        <Ul className={isMobile ? 'nav__menu_mobile' : 'nav__menu'} onClick={() => setIsMobile(false)}>
+          <Link to='/' className='nav__menu_link'><Li className='nav__menu_li'><A> INICIO </A></Li></Link>
+          <Link to='#' className='nav__menu_link'><Li className='nav__menu_li'><A> DOCUMENTACION </A></Li></Link>
+          <Link to='#' className='nav__menu_link'><Li className='nav__menu_li'><A> COMPONENTES </A></Li></Link>
+        </Ul>
 
-                <Ul className={isMobile ? "nav__menu_mobile" : "nav__menu"} onClick={() => setIsMobile(false)}>
-                    <Link to="/" className="nav__menu_link"><Li className="nav__menu_li"><A> INICIO </A></Li></Link>
-                    <Link to="#" className="nav__menu_link"><Li className="nav__menu_li"><A> DOCUMENTACION </A></Li></Link>
-                    <Link to="#" className="nav__menu_link"><Li className="nav__menu_li"><A> COMPONENTES </A></Li></Link>
-                </Ul>
+        <Ul>
+          <Input placeholder='Buscar' marginR2 />
+          <Icon src={mdiHome} size={1} color='#FFFFFF' />
 
-                <Ul>
-                    <Input placeholder="Buscar" marginR2 /> 
-                    <Icon src={mdiHome} size={1} color='#FFFFFF'/>
+        </Ul>
 
-                </Ul> 
+        <Button className='nav__btn' onClick={() => setIsMobile(!isMobile)}>
+          {isMobile
+            ? (
+              <Icon src={mdiHome} size={1} color='#FFFFFF' />
+              )
+            : (
+              <Icon src={mdiHome} size={1} color='#FFFFFF' />
+              )}
+        </Button>
 
-                <Button className="nav__btn" onClick={() => setIsMobile(!isMobile)}>
-                    {isMobile ? (
-                        <Icon src={mdiHome} size={1} color='#FFFFFF'/>
-                    ) : (
-                        <Icon src={mdiHome} size={1} color='#FFFFFF'/>
-                    )}
-                </Button>
-
-
-            </Menu>
-        </>
-    );
+      </Menu>
+    </>
+  )
 }
 
 export default MenuSearch01

@@ -20,5 +20,8 @@
     "@vitejs/plugin-react": "^2.2.0",
     "standard": "^17.0.0",
     "vite": "^3.2.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }

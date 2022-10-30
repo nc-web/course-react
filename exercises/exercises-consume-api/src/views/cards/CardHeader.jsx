@@ -1,5 +1,5 @@
 
-import {  } from 'react'
+import { } from 'react'
 import styled from 'styled-components'
 import Icon from '@mdi/react'
 
@@ -11,7 +11,6 @@ import H4 from '@components/h4'
 // Icons
 import { mdiHome } from '@mdi/js'
 
-
 const Card = styled(Div)`
     display: grid;
     background: linear-gradient( 155deg,#0353F4,#1957D2,#9138CB);
@@ -21,23 +20,22 @@ const Card = styled(Div)`
     height: 300px;
 `
 
-
 const CardGradient02 = () => {
-    return (
-        <>
-            <Card>
-                <Div displayGrid jcCenter>
-                    <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                </Div>
+  return (
+    <>
+      <Card>
+        <Div displayGrid jcCenter>
+          <Icon src={mdiHome} size={1} color='#A2BD00' />
+        </Div>
 
-                <Div displayGrid jcCenter>
-                    <H2 textGray200 > REACT HOOKS </H2>
-                    <H4 textGray200 > MENU </H4>
-                </Div>
-            </Card>
+        <Div displayGrid jcCenter>
+          <H2 textGray200> REACT HOOKS </H2>
+          <H4 textGray200> MENU </H4>
+        </Div>
+      </Card>
 
-        </>
-    )
+    </>
+  )
 }
 
 export default CardGradient02

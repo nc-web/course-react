@@ -1,5 +1,5 @@
 
-import {  } from 'react'
+import { } from 'react'
 
 // Routes
 import Routes from './router/routes'
@@ -7,9 +7,7 @@ import Routes from './router/routes'
 // Global Styles
 import './assets/css/globals.css'
 
-
-function App() {
-
+function App () {
   return (
     <>
       <Routes />

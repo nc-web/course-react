@@ -1,5 +1,4 @@
 
-
 import { } from 'react'
 import styled from 'styled-components'
 
@@ -9,7 +8,6 @@ import Div from '@components/div'
 // Views
 import Menu from '@views/navs/Menu'
 import MenuVertical from '@views/navs/MenuVertical'
-
 
 const ContainerMain = styled(Div)`
     display: grid;
@@ -24,26 +22,24 @@ const ContainerMenuVertical = styled(Div)`
 `
 
 const DashboardReact = ({ children }) => {
+  return (
+    <>
+      <Div displayGrid>
+        <Menu />
+      </Div>
 
-    
-    return (
-        <>
-            <Div displayGrid>
-                <Menu />
-            </Div>
+      <ContainerMain>
+        <ContainerMenuVertical>
+          <MenuVertical />
+        </ContainerMenuVertical>
 
-            <ContainerMain>
-                <ContainerMenuVertical>
-                    <MenuVertical />
-                </ContainerMenuVertical>
+        <Div displayGrid bgGray100>
+          {children}
+        </Div>
 
-                <Div displayGrid bgGray100>
-                    { children }
-                </Div>
-
-            </ContainerMain>
-        </>
-    )
+      </ContainerMain>
+    </>
+  )
 }
 
 export default DashboardReact

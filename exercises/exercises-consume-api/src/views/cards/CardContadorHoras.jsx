@@ -1,5 +1,5 @@
 
-import {  } from 'react'
+import { } from 'react'
 import styled from 'styled-components'
 import Icon from '@mdi/react'
 
@@ -13,7 +13,6 @@ import H4 from '@components/h4'
 
 // Icons Font Awesome
 import { mdiHome } from '@mdi/js'
-
 
 const Card = styled(Div)`
     background-color: #5E5E5E;
@@ -29,24 +28,23 @@ const Card = styled(Div)`
     }
 `
 
-
 const CardContadorHoras = () => {
-    return (
-        <>
-            <Link to="/contador-horas">
-                    <Card>
-                        <Div displayGrid jcCenter>
-                            <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        </Div>
+  return (
+    <>
+      <Link to='/contador-horas'>
+        <Card>
+          <Div displayGrid jcCenter>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+          </Div>
 
-                        <Div displayGrid jcCenter>
-                            <H2 p2 textGray200 center> CONTADOR HORAS </H2>
-                            <H4 p3 textGray200 center lighter> useState </H4>
-                        </Div>
-                    </Card>
-            </Link>
-        </>
-    )
+          <Div displayGrid jcCenter>
+            <H2 p2 textGray200 center> CONTADOR HORAS </H2>
+            <H4 p3 textGray200 center lighter> useState </H4>
+          </Div>
+        </Card>
+      </Link>
+    </>
+  )
 }
 
 export default CardContadorHoras

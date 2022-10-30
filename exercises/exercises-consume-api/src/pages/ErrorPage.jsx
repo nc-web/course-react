@@ -10,28 +10,27 @@ import H6 from '@components/h6'
 import A from '@components/a'
 import Button from '@components/button'
 
-
 const ErrorPage = () => {
-    return (
-        <>
-            <Header bgGray200>
-                <Div>
-                    <H2>ERROR PAGE</H2>
-                </Div>
+  return (
+    <>
+      <Header bgGray200>
+        <Div>
+          <H2>ERROR PAGE</H2>
+        </Div>
 
-                <Div>
-                    <A href="/">
-                        <Button> Atras </Button>
-                    </A>
-                </Div>
-            </Header>
-            <Footer bgGray600>
-                <Div>
-                    <H6>Newsoft Computer</H6>
-                </Div>
-            </Footer>
-        </>
-    )
+        <Div>
+          <A href='/'>
+            <Button> Atras </Button>
+          </A>
+        </Div>
+      </Header>
+      <Footer bgGray600>
+        <Div>
+          <H6>Newsoft Computer</H6>
+        </Div>
+      </Footer>
+    </>
+  )
 }
 
 export default ErrorPage

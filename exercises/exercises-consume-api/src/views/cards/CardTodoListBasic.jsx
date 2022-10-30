@@ -1,7 +1,7 @@
 
-import {  } from 'react'
+import { } from 'react'
 import styled from 'styled-components'
-import Icon from'@mdi/react'
+import Icon from '@mdi/react'
 
 // Link React
 import { Link } from 'react-router-dom'
@@ -13,7 +13,6 @@ import Small from '@components/small'
 
 // Icons
 import { mdiHome } from '@mdi/js'
-
 
 const Card = styled(Div)`
     background-color: #5E5E5E;
@@ -29,24 +28,23 @@ const Card = styled(Div)`
     }
 `
 
-
 const CardTodoListBasic = () => {
-    return (
-        <>
-            <Link to="/contador-horas">
-                    <Card>
-                        <Div displayGrid jcCenter>
-                            <Icon src={mdiHome} size={1} color='#A2BD00'/>
-                        </Div>
+  return (
+    <>
+      <Link to='/contador-horas'>
+        <Card>
+          <Div displayGrid jcCenter>
+            <Icon src={mdiHome} size={1} color='#A2BD00' />
+          </Div>
 
-                        <Div displayGrid jcCenter>
-                            <P textGray200 > TODO LIST BASIC </P>
-                            <Small textGray200 lighter> useState - useEffect </Small>
-                        </Div>
-                    </Card>
-            </Link>
-        </>
-    )
+          <Div displayGrid jcCenter>
+            <P textGray200> TODO LIST BASIC </P>
+            <Small textGray200 lighter> useState - useEffect </Small>
+          </Div>
+        </Card>
+      </Link>
+    </>
+  )
 }
 
 export default CardTodoListBasic
