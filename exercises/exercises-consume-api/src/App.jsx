@@ -5,7 +5,7 @@ import { } from 'react'
 import Routes from './router/routes'
 
 // Global Styles
-import './assets/css/globals.css'
+import './assets/css/global.css'
 
 function App () {
   return (

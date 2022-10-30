@@ -6,6 +6,8 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
 
+  plugins: [react()],
+
   // Path Absolute
   resolve: {
     alias: [
@@ -31,8 +33,6 @@ export default defineConfig({
         find: '@views', replacement: path.resolve(__dirname, 'src/views')
       }
     ]
-  },
-
-  plugins: [react()]
+  }
 
 })

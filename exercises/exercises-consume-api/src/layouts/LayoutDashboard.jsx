@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import Div from '@components/div'
 
 // Views
-import Menu from '@views/navs/Menu'
+import Menu from '@views/nav/Menu'
 import MenuVertical from '@views/navs/MenuVertical'
 
 const ContainerMain = styled(Div)`
