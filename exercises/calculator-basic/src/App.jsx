@@ -28,7 +28,7 @@ function App () {
           <H6 textWhite> BASIC CALCULATOR </H6>
         </Div>
         <Div displayFlex jcSpaceBetween aiCenter>
-          <Ul><Link to='/'><P textWhite> Calculator </P></Link></Ul>
+          <Ul><Link to='/'><P textWhite> Calculator 1</P></Link></Ul>
           <Ul><Link to='/credits'><P textWhite> Credits </P></Link></Ul>
         </Div>
       </Nav>
