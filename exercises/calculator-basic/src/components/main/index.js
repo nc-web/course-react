@@ -8,13 +8,13 @@ import roboto from '@components/assets/fonts/fonts'
 import colorsBG from '@components/assets/colors/colors-bg'
 import colorsText from '@components/assets/colors/colors-text'
 
-// PROPS
-// Global props
+// Props base
 import globalProps from '@components/assets/props/global-props'
+
 // Props exclusives containers
 import exclusivesPropsContainers from '@components/assets/props/exclusives-props-containers'
 
-const Nav = Styled.nav`
+const Main = Styled.main`
 
     /* FONT */
     ${roboto}
@@ -31,4 +31,4 @@ const Nav = Styled.nav`
 
 `
 
-export default Nav
+export default Main
