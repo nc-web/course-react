@@ -16,9 +16,9 @@ import H6 from '@components/h6'
 import P from '@components/p'
 import Small from '@components/small'
 
-// Pages
-import Home from '@pages/Calculator'
-import Credits from '@pages/Credits'
+// Views
+import Calculator01 from '@views/Calculator01'
+import Credits from '@views/Credits'
 
 function App () {
   return (
@@ -34,7 +34,7 @@ function App () {
       </Nav>
       <Main displayGrid jcCenter padding='1rem' bgGray300>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Calculator01 />} />
           <Route path='/credits' element={<Credits />} />
         </Routes>
       </Main>
