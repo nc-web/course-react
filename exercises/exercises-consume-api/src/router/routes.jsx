@@ -16,9 +16,10 @@ const routes = () => {
   return (
     <>
       <Routes>
-        <Route exact from='/' to='/menu-inicio' element={<PageMenuInicio />} />
-        <Route exact path='/menu-inicio' element={<PageMenuInicio />} />
-        <Route exact path='/api-pokemons' element={<PageAPIPokemons />} />
+        {/* <Route exact from='/' to='/menu-inicio' element={<PageMenuInicio />} /> */}
+        <Route path='/' element={<PageMenuInicio />} />
+        <Route path='/menu-inicio' element={<PageMenuInicio />} />
+        <Route path='/api-pokemons' element={<PageAPIPokemons />} />
         <Route exact path='/api-rick-morty' element={<PageAPIRickAndMorty />} />
         <Route element={PageError} exact />
       </Routes>

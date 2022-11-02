@@ -18,6 +18,9 @@ import Button from '@components/button'
 // Icons
 import { mdiHome } from '@mdi/js'
 
+// Images
+import Logo from '@components/assets/img/logo-nc'
+
 // Utils
 import { device } from '@components/assets/utils/divice'
 // import { device } from '../../components/assets/utils/device/index'
@@ -201,17 +204,17 @@ const MenuSearch01 = () => {
 
         <Ul>
           <Input placeholder='Buscar' marginR2 />
-          <Icon src={mdiHome} size={1} color='#FFFFFF' />
+          <Icon path={mdiHome} size={1} color='#FFFFFF' />
 
         </Ul>
 
         <Button className='nav__btn' onClick={() => setIsMobile(!isMobile)}>
           {isMobile
             ? (
-              <Icon src={mdiHome} size={1} color='#FFFFFF' />
+              <Img src={Logo} color='#FFFFFF' />
               )
             : (
-              <Icon src={mdiHome} size={1} color='#FFFFFF' />
+              <Icon src={Logo} color='#FFFFFF' />
               )}
         </Button>
 
