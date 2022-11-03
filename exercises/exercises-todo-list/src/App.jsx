@@ -16,9 +16,7 @@ import P from '@components/p'
 import TodoList01 from '@views/todo-list-01'
 import TodoList02 from '@views/todo-list-02'
 
-
-function App() {
-
+function App () {
   return (
     < >
       <Nav displayFlex jcSpaceBetween aiCenter>
