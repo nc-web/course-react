@@ -1,9 +1,6 @@
 
 import { useState, useEffect } from 'react'
 
-// Layouts
-import LayoutDashboard from '@layouts/LayoutDashboard'
-
 // Components
 import Div from '@components/div'
 import H4 from '@components/h4'
@@ -51,7 +48,6 @@ const APIPokemonsUseEffect = () => {
 
   return (
     <>
-      <LayoutDashboard>
         <Div>
           <Div displayGrid jcCenter>
             <H4 textPink500> API Pokemon useEffect - Fetch </H4>
@@ -71,8 +67,6 @@ const APIPokemonsUseEffect = () => {
                         }
           </Div>
         </Div>
-      </LayoutDashboard>
-
     </>
   )
 }

@@ -1,12 +1,12 @@
 
 import { } from 'react'
 
-const APIPhotosBasic = () => {
+const APIBasicPhotos = () => {
   return (
     <>
-
+      API Basic Photos
     </>
   )
 }
 
-export default APIPhotosBasic
+export default APIBasicPhotos

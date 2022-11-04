@@ -1,9 +1,6 @@
 
 import { useState, useEffect } from 'react'
 
-// Layouts
-import LayoutDashboard from '@layouts/LayoutDashboard'
-
 // Components Base
 import Div from '@components/div'
 
@@ -18,7 +15,6 @@ const Characters = () => {
 
   return (
     <>
-      <LayoutDashboard>
         <Div displayGrid jcCenter>
           <div className='Characters'>
             {characters.map(character => (
@@ -31,7 +27,6 @@ const Characters = () => {
             ))}
           </div>
         </Div>
-      </LayoutDashboard>
     </>
   )
 }
