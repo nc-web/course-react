@@ -1,5 +1,5 @@
 {
-  "name": "react-eslint-standard",
+  "name": "react-standard-linter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -22,6 +22,6 @@
     "vite": "^3.2.0"
   },
   "eslintConfig": {
-    "extends": "standard"
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
