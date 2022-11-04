@@ -15,15 +15,15 @@ const hourGetInterval = () => {
   }, [])
 
   return (
-    <>
+        <>
 
-      <H4 textGray900> {`${dateTime.toLocaleTimeString()}`} </H4>
+            <H4 textGray900> {`${dateTime.toLocaleTimeString()}`} </H4>
 
-      {/*
+            {/*
             Fecha & Hora
             <Typography> {`${dateTime.toLocaleDateString()} ${dateTime.toLocaleTimeString()}`} </Typography>
             */}
-    </>
+        </>
   )
 }
 
