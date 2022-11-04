@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 // Components
 import Div from '@components/div'
@@ -48,25 +48,25 @@ const APIPokemonsUseEffect = () => {
 
   return (
     <>
-        <Div>
-          <Div displayGrid jcCenter>
-            <H4 textPink500> API Pokemon useEffect - Fetch </H4>
-          </Div>
-
-          <Div displayGrid jcCenter>
-            {
-                            pokemons.length === 0
-                              ? (
-                                <P> Cargando </P>
-                                )
-                              : (
-                                  pokemons.map((el) => (
-                                    <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
-                                  ))
-                                )
-                        }
-          </Div>
+      <Div padding='1rem'>
+        <Div displayGrid jcCenter>
+          <H4 textPink500> API Pokemon useEffect - Fetch </H4>
         </Div>
+
+        <Div displayGrid jcCenter aiCenter gtcAutoFit18>
+          {
+            pokemons.length === 0
+              ? (
+                <P> Cargando ... </P>
+              )
+              : (
+                pokemons.map((el) => (
+                  <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+                ))
+              )
+          }
+        </Div>
+      </Div>
     </>
   )
 }
