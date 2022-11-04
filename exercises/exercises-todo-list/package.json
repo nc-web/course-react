@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "standard",
-    "lint-fix": "standard --fix",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix",
     "test": "vitest .",
     "covarage": "vitest --covarage"
   },
@@ -24,11 +24,13 @@
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "@vitejs/plugin-react": "^2.2.0",
-    "standard": "^17.0.0",
+    "eslint": "^8.26.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.10",
     "vite": "^3.2.0",
     "vitest": "^0.24.5"
-  },
-  "eslintConfig": {
-    "extends": ["./node_modules/standard/eslintrc.json"]
   }
 }
