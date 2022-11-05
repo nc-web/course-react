@@ -3,8 +3,10 @@ import React, { useState, useEffect } from 'react'
 
 // Components Base
 import Div from '@components/div'
+import Img from '@components/img'
+import P from '@components/p'
 
-const Characters = () => {
+const APIRickAndMorty = () => {
   const [characters, setCharacters] = useState([])
 
   useEffect(() => {
@@ -15,20 +17,18 @@ const Characters = () => {
 
   return (
     <>
-        <Div displayGrid jcCenter>
-          <div className='Characters'>
-            {characters.map(character => (
-              <div>
-                <div>
-                  <img src={character.image} alt='' style={{ width: '150px' }} />
-                  <p>{character.name}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <Div displayGrid jcCenter>
+        <Div className='Characters' displayGrid jcCenter gtcAutoFit18>
+          {characters.map(character => (
+            <Div key={character.id}>
+              <Img src={character.image} alt='' style={{ width: '150px' }} />
+              <P>{character.name}</P>
+            </Div>
+          ))}
         </Div>
+      </Div>
     </>
   )
 }
 
-export default Characters
+export default APIRickAndMorty

@@ -3,19 +3,22 @@ import React, { useState, useEffect } from 'react'
 
 // Components
 import Div from '@components/div'
+import Figure from '@components/figure'
+import Img from '@components/img'
+import Figcaption from '@components/figcaption'
 import H4 from '@components/h4'
 import P from '@components/p'
 
 const Pokemon = ({ avatar, name }) => {
   return (
-    <figure>
-      <img src={avatar} alt={name} />
-      <figcaption> {name} </figcaption>
-    </figure>
+    <Figure>
+      <Img src={avatar} alt={name} />
+      <Figcaption> {name} </Figcaption>
+    </Figure>
   )
 }
 
-const APIPokemonsUseEffect = () => {
+const APIPokemons = () => {
   const [pokemons, setPokemons] = useState([])
 
   useEffect(() => {
@@ -50,7 +53,7 @@ const APIPokemonsUseEffect = () => {
     <>
       <Div padding='1rem'>
         <Div displayGrid jcCenter>
-          <H4 textPink500> API Pokemon useEffect - Fetch </H4>
+          <H4 textPink500> API Pokemon - Fetch useEffect</H4>
         </Div>
 
         <Div displayGrid jcCenter aiCenter gtcAutoFit18>
@@ -71,4 +74,4 @@ const APIPokemonsUseEffect = () => {
   )
 }
 
-export default APIPokemonsUseEffect
+export default APIPokemons
