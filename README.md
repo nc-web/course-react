@@ -1,2 +1,5 @@
-# course-react
-NC Course - React
+# COURSE REACT
+
+## TEAM
+
+    - Andres Giraldo
