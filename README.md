@@ -2,4 +2,5 @@
 
 ## TEAM
 
-    - Andres Giraldo
+- Andres Giraldo
+- Jenny Gomez
