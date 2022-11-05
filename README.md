@@ -3,4 +3,4 @@
 ## TEAM
 
 - Andres Giraldo
- - Jenny Gomez
+- Jenny Gomez
