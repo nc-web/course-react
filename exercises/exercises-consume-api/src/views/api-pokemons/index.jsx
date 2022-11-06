@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react'
 
-// Components
+// NC Components Base
 import Div from '@components/div'
 import Figure from '@components/figure'
 import Img from '@components/img'
