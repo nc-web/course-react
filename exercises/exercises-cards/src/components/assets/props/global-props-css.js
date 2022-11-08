@@ -171,7 +171,6 @@ export const Top680 = css` top: 42.5rem; `
 export const Top690 = css` top: 43.125rem; `
 export const Top700 = css` top: 43.75rem; `
 
-
 // Bottom
 export const Bottom = css` bottom: ${props => props.bottom}; `
 export const Bottom0 = css` bottom: 0; `
@@ -259,7 +258,7 @@ export const Margin8 = css` margin: 3.7rem; `
 export const Margin9 = css` margin: 4.6rem; `
 export const Margin10 = css` margin: 5.6rem; `
 // MarginX - Margin eje X
-export const MarginX = css` margin-left: ${ props => props.marginX }; margin-right: ${ props => props.marginX }; `
+export const MarginX = css` margin-left: ${props => props.marginX}; margin-right: ${props => props.marginX}; `
 export const MarginX1 = css` margin-left: .2rem; margin-right: .2rem; `
 export const MarginX2 = css` margin-left: .4rem; margin-right: .4rem; `
 export const MarginX3 = css` margin-left: .7rem; margin-right: .7rem; `
@@ -271,7 +270,7 @@ export const MarginX8 = css` margin-left: 3.7rem; margin-right: 3.7rem; `
 export const MarginX9 = css` margin-left: 4.6rem; margin-right: 4.6rem; `
 export const MarginX10 = css` margin-left: 5.6rem; margin-right: 5.6rem; `
 // MarginY - Margin eje Y
-export const MarginY = css` margin-top: ${ props => props.marginY }; margin-bottom: ${ props => props.marginY }; `
+export const MarginY = css` margin-top: ${props => props.marginY}; margin-bottom: ${props => props.marginY}; `
 export const MarginY1 = css` margin-top: .2rem; margin-bottom: .2rem; `
 export const MarginY2 = css` margin-top: .4rem; margin-bottom: .4rem; `
 export const MarginY3 = css` margin-top: .7rem; margin-bottom: .7rem; `
@@ -283,7 +282,7 @@ export const MarginY8 = css` margin-top: 3.7rem; margin-bottom: 3.7rem; `
 export const MarginY9 = css` margin-top: 4.6rem; margin-bottom: 4.6rem; `
 export const MarginY10 = css` margin-top: 5.6rem; margin-bottom: 5.6rem; `
 // MarginT - Margin Top
-export const MarginT = css` margin-top: ${ props => props.marginT }; `
+export const MarginT = css` margin-top: ${props => props.marginT}; `
 export const MarginT1 = css` margin-top: .2rem; `
 export const MarginT2 = css` margin-top: .4rem; `
 export const MarginT3 = css` margin-top: .7rem; `
@@ -295,7 +294,7 @@ export const MarginT8 = css` margin-top: 3.7rem; `
 export const MarginT9 = css` margin-top: 4.6rem; `
 export const MarginT10 = css` margin-top: 5.6rem; `
 // MarginR - Margin right
-export const MarginR = css` margin-right: ${ props => props.marginR }; `
+export const MarginR = css` margin-right: ${props => props.marginR}; `
 export const MarginR1 = css` margin-right: .2rem; `
 export const MarginR2 = css` margin-right: .4rem; `
 export const MarginR3 = css` margin-right: .7rem; `
@@ -307,7 +306,7 @@ export const MarginR8 = css` margin-right: 3.7rem; `
 export const MarginR9 = css` margin-right: 4.6rem; `
 export const MarginR10 = css` margin-right: 5.6rem; `
 // MarginB - Margin bottom
-export const MarginB = css` margin-bottom: ${ props => props.marginB }; `
+export const MarginB = css` margin-bottom: ${props => props.marginB}; `
 export const MarginB1 = css` margin-bottom: .2rem; `
 export const MarginB2 = css` margin-bottom: .4rem; `
 export const MarginB3 = css` margin-bottom: .7rem; `
@@ -319,7 +318,7 @@ export const MarginB8 = css` margin-bottom: 3.7rem; `
 export const MarginB9 = css` margin-bottom: 4.6rem; `
 export const MarginB10 = css` margin-bottom: 5.6rem; `
 // MarginL - Margin left
-export const MarginL = css` margin-left: ${ props => props.marginL }; `
+export const MarginL = css` margin-left: ${props => props.marginL}; `
 export const MarginL1 = css` margin-left: .2rem; `
 export const MarginL2 = css` margin-left: .4rem; `
 export const MarginL3 = css` margin-left: .7rem; `
@@ -333,7 +332,7 @@ export const MarginL10 = css` margin-left: 5.6rem; `
 
 // ======================== PADDING ==============================
 // Padding - Padding All
-export const Padding = css` padding: ${ props => props.padding }; `
+export const Padding = css` padding: ${props => props.padding}; `
 export const Padding1 = css` padding: .1rem; `
 export const Padding2 = css` padding: .2rem; `
 export const Padding3 = css` padding: .3rem; `
@@ -355,7 +354,7 @@ export const Padding18 = css` padding: 1.8rem; `
 export const Padding19 = css` padding: 1.9rem; `
 export const Padding20 = css` padding: 2rem; `
 // PaddingX - Padding eje X
-export const PaddingX = css` padding-right: ${ props => props.paddingX }; padding-left: ${ props => props.paddingX }; `
+export const PaddingX = css` padding-right: ${props => props.paddingX}; padding-left: ${props => props.paddingX}; `
 export const PaddingX1 = css` padding-right: .1rem; padding-left: .1rem; `
 export const PaddingX2 = css` padding-right: .2rem; padding-left: .2rem; `
 export const PaddingX3 = css` padding-right: .3rem; padding-left: .3rem; `
@@ -377,7 +376,7 @@ export const PaddingX18 = css` padding-right: 1.8rem; padding-left: 1.8rem; `
 export const PaddingX19 = css` padding-right: 1.9rem; padding-left: 1.9rem; `
 export const PaddingX20 = css` padding-right: 2rem; padding-left: 2rem; `
 // PaddingY - Padding eje Y
-export const PaddingY = css` padding-top: ${ props => props.paddingY }; padding-bottom: ${ props => props.paddingY }; `
+export const PaddingY = css` padding-top: ${props => props.paddingY}; padding-bottom: ${props => props.paddingY}; `
 export const PaddingY1 = css` padding-top: .1rem; padding-bottom: .1rem; `
 export const PaddingY2 = css` padding-top: .2rem; padding-bottom: .2rem; `
 export const PaddingY3 = css` padding-top: .3rem; padding-bottom: .3rem; `
@@ -399,7 +398,7 @@ export const PaddingY18 = css` padding-top: 1.8rem; padding-bottom: 1.8rem; `
 export const PaddingY19 = css` padding-top: 1.9rem; padding-bottom: 1.9rem; `
 export const PaddingY20 = css` padding-top: 2rem; padding-bottom: 2rem; `
 // PaddingT - Padding top
-export const PaddingT = css` padding-top: ${ props => props.paddingT }; `
+export const PaddingT = css` padding-top: ${props => props.paddingT}; `
 export const PaddingT1 = css` padding-top: .1rem; `
 export const PaddingT2 = css` padding-top: .2rem; `
 export const PaddingT3 = css` padding-top: .3rem; `
@@ -421,7 +420,7 @@ export const PaddingT18 = css` padding-top: 1.8rem; `
 export const PaddingT19 = css` padding-top: 1.9rem; `
 export const PaddingT20 = css` padding-top: 2rem; `
 // PaddingR - Padding right
-export const PaddingR = css` padding-right: ${ props => props.paddingR }; `
+export const PaddingR = css` padding-right: ${props => props.paddingR}; `
 export const PaddingR1 = css` padding-right: .1rem; `
 export const PaddingR2 = css` padding-right: .2rem; `
 export const PaddingR3 = css` padding-right: .3rem; `
@@ -443,7 +442,7 @@ export const PaddingR18 = css` padding-right: 1.8rem; `
 export const PaddingR19 = css` padding-right: 1.9rem; `
 export const PaddingR20 = css` padding-right: 2rem; `
 // PaddingB - Padding bottom
-export const PaddingB = css` padding-bottom: ${ props => props.paddingB }; `
+export const PaddingB = css` padding-bottom: ${props => props.paddingB}; `
 export const PaddingB1 = css` padding-bottom: .1rem; `
 export const PaddingB2 = css` padding-bottom: .2rem; `
 export const PaddingB3 = css` padding-bottom: .3rem; `
@@ -465,7 +464,7 @@ export const PaddingB18 = css` padding-bottom: 1.8rem; `
 export const PaddingB19 = css` padding-bottom: 1.9rem; `
 export const PaddingB20 = css` padding-bottom: 2rem; `
 // PaddingL - Padding left
-export const PaddingL = css` padding-left: ${ props => props.paddingL }; `
+export const PaddingL = css` padding-left: ${props => props.paddingL}; `
 export const PaddingL1 = css` padding-left: .1rem; `
 export const PaddingL2 = css` padding-left: .2rem; `
 export const PaddingL3 = css` padding-left: .3rem; `
@@ -488,7 +487,7 @@ export const PaddingL19 = css` padding-left: 1.9rem; `
 export const PaddingL20 = css` padding-left: 2rem; `
 
 // ======================== Z-INDEX ==============================
-export const ZIndex = css` z-index: ${ props => props.zIndex }; `
+export const ZIndex = css` z-index: ${props => props.zIndex}; `
 export const ZIndex0 = css` z-index:0; `
 export const ZIndex1 = css` z-index:1; `
 export const ZIndex2 = css` z-index:2; `
