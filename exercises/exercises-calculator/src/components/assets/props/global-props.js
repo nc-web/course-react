@@ -5,17 +5,17 @@ import { css } from 'styled-components'
 import {
   BorderNone, BorderTop, BorderBottom, BorderLeft, BorderRight,
   BorderRadius, BorderRadiusTL, BorderRadiusTR, BorderRadiusBL, BorderRadiusBR,
-  Bottom, 
+  Bottom,
   BoxShadowTR1, BoxShadowTR2, BoxShadowTL1, BoxShadowTL2, BoxShadowBR1, BoxShadowBR2, BoxShadowBL1, BoxShadowBL2,
   CursorPointer,
   Left,
   Margin, MarginX, MarginY, MarginT, MarginR, MarginB, MarginL,
-  Padding, PaddingX, PaddingY, PaddingT, PaddingR, PaddingB, PaddingL, 
+  Padding, PaddingX, PaddingY, PaddingT, PaddingR, PaddingB, PaddingL,
   PositionAbsolute, PositionFixed, PositionInherit, PositionInitial, PositionRelative, PositionStatic, PositionSticky, PositionUnset,
   Right,
   TextCenter, TextLeft, TextRight,
   Top,
-  ZIndex,
+  ZIndex
 
 }
   from '@components/assets/props/global-props-css'

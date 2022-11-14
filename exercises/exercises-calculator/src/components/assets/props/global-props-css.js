@@ -33,7 +33,6 @@ export const BorderRadiusBL = css` border-bottom-left-radius: ${props => props.b
 // Radius BR
 export const BorderRadiusBR = css` border-bottom-right-radius: ${props => props.borderRadiusBR}; `
 
-
 // ========================= CURSOR POINTER =============================
 export const CursorPointer = css`cursor: pointer;`
 
@@ -91,45 +90,44 @@ export const MarginAuto = css` margin: auto;`
 export const Margin = css` margin: ${props => props.margin};`
 
 // MarginX - Margin eje X
-export const MarginX = css` margin-left: ${ props => props.marginX }; margin-right: ${ props => props.marginX }; `
+export const MarginX = css` margin-left: ${props => props.marginX}; margin-right: ${props => props.marginX}; `
 
 // MarginY - Margin eje Y
-export const MarginY = css` margin-top: ${ props => props.marginY }; margin-bottom: ${ props => props.marginY }; `
+export const MarginY = css` margin-top: ${props => props.marginY}; margin-bottom: ${props => props.marginY}; `
 
 // MarginT - Margin Top
-export const MarginT = css` margin-top: ${ props => props.marginT }; `
+export const MarginT = css` margin-top: ${props => props.marginT}; `
 
 // MarginR - Margin right
-export const MarginR = css` margin-right: ${ props => props.marginR }; `
+export const MarginR = css` margin-right: ${props => props.marginR}; `
 
 // MarginB - Margin bottom
-export const MarginB = css` margin-bottom: ${ props => props.marginB }; `
+export const MarginB = css` margin-bottom: ${props => props.marginB}; `
 
 // MarginL - Margin left
-export const MarginL = css` margin-left: ${ props => props.marginL }; `
+export const MarginL = css` margin-left: ${props => props.marginL}; `
 
 // ======================== PADDING ==============================
 // Padding - Padding All
-export const Padding = css` padding: ${ props => props.padding }; `
+export const Padding = css` padding: ${props => props.padding}; `
 
 // PaddingX - Padding eje X
-export const PaddingX = css` padding-right: ${ props => props.paddingX }; padding-left: ${ props => props.paddingX }; `
+export const PaddingX = css` padding-right: ${props => props.paddingX}; padding-left: ${props => props.paddingX}; `
 
 // PaddingY - Padding eje Y
-export const PaddingY = css` padding-top: ${ props => props.paddingY }; padding-bottom: ${ props => props.paddingY }; `
+export const PaddingY = css` padding-top: ${props => props.paddingY}; padding-bottom: ${props => props.paddingY}; `
 
 // PaddingT - Padding top
-export const PaddingT = css` padding-top: ${ props => props.paddingT }; `
+export const PaddingT = css` padding-top: ${props => props.paddingT}; `
 
 // PaddingR - Padding right
-export const PaddingR = css` padding-right: ${ props => props.paddingR }; `
+export const PaddingR = css` padding-right: ${props => props.paddingR}; `
 
 // PaddingB - Padding bottom
-export const PaddingB = css` padding-bottom: ${ props => props.paddingB }; `
+export const PaddingB = css` padding-bottom: ${props => props.paddingB}; `
 
 // PaddingL - Padding left
-export const PaddingL = css` padding-left: ${ props => props.paddingL }; `
+export const PaddingL = css` padding-left: ${props => props.paddingL}; `
 
 // ======================== Z-INDEX ==============================
-export const ZIndex = css` z-index: ${ props => props.zIndex }; `
-
+export const ZIndex = css` z-index: ${props => props.zIndex}; `
