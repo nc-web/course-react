@@ -24,6 +24,10 @@ export const ASStretch = css` align-self: stretch; `
 export const ASBaseline = css` align-self: baseline; `
 export const ASAuto = css` align-self: auto; `
 
+// ==== DIRECTION (LAYOUT DIRECTION) ====
+export const DirectionLTR = css` direction: ltr; `
+export const DirectionRTL = css` direction: rtl; `
+
 // Display - Legacy values
 export const DisplayBlock = css` display: block; `
 export const DisplayInline = css` display: inline; `
@@ -61,6 +65,15 @@ export const DisplayBlockGrid = css` display: block grid; `
 // DisplayInlineGrid = css` inline grid;`
 export const DisplayBlockFlowRoot = css` display: block flow-root; `
 
+// ==== FLEX ====
+export const Flex = css` flex: ${props => props.flex};`
+
+// ==== FLEX DIRECTION ====
+export const FlexDirectionColumn = css` flex-direction: column;`
+export const FlexDirectionRow = css` flex-direction: row;`
+export const FlexDirectionColumnReverse = css` flex-direction: column-reverse;`
+export const FlexDirectionRowReverse = css` flex-direction: row-reverse;`
+
 // ==== Justify Content ====
 export const JCFlexStart = css` justify-content: flex-start; `
 export const JCCenter = css` justify-content: center; `
@@ -70,49 +83,11 @@ export const JCSpaceBetween = css` justify-content: space-between; `
 export const JCSpaceEvely = css` justify-content: space-evenly; `
 
 // ===== Gap ====
-export const Gap1 = css` gap: .063rem; `
-export const Gap2 = css` gap: .125rem; `
-export const Gap3 = css` gap: .188rem; `
-export const Gap4 = css` gap: .25rem; `
-export const Gap5 = css` gap: .313rem; `
-export const Gap6 = css` gap: .375rem; `
-export const Gap7 = css` gap: .438rem; `
-export const Gap8 = css` gap: .5rem; `
-export const Gap9 = css` gap: .563rem; `
-export const Gap10 = css` gap: .625rem; `
-export const Gap11 = css` gap: .688rem; `
-export const Gap12 = css` gap: .75rem; `
-export const Gap13 = css` gap: .813rem; `
-export const Gap14 = css` gap: .875rem; `
-export const Gap15 = css` gap: .938rem; `
-export const Gap16 = css` gap: 1rem; `
-export const Gap17 = css` gap: 1.063rem; `
-export const Gap18 = css` gap: 1.125rem; `
-export const Gap19 = css` gap: 1.188rem; `
-export const Gap20 = css` gap: 1.25rem; `
-export const Gap21 = css` gap: 1.313rem; `
-export const Gap22 = css` gap: 1.375rem; `
-export const Gap23 = css` gap: 1.438rem; `
-export const Gap24 = css` gap: 1.5rem; `
-export const Gap25 = css` gap: 1.563rem; `
-export const Gap26 = css` gap: 1.625rem; `
-export const Gap27 = css` gap: 1.688rem; `
-export const Gap28 = css` gap: 1.75rem; `
-export const Gap29 = css` gap: 1.813rem; `
-export const Gap30 = css` gap: 1.875rem; `
-export const Gap31 = css` gap: 1.938rem; `
-export const Gap32 = css` gap: 2rem; `
-export const Gap33 = css` gap: 2.063rem; `
-export const Gap34 = css` gap: 2.125rem; `
-export const Gap35 = css` gap: 2.188rem; `
-export const Gap36 = css` gap: 2.25rem; `
-export const Gap37 = css` gap: 2.313rem; `
-export const Gap38 = css` gap: 2.375rem; `
-export const Gap39 = css` gap: 2.438rem; `
-export const Gap40 = css` gap: 2.5rem; `
+export const Gap = css` gap: ${props => props.gap}; `
 
 // ==== Grid Template Columns - Repeat ====
 export const GTColNone = css` grid-template-columns: none; `
+export const GTCol = css` grid-template-columns: repeat(${props => props.gtCol}, minmax(0, 1fr)); `
 export const GTCol1 = css` grid-template-columns: repeat(1, minmax(0, 1fr)); `
 export const GTCol2 = css` grid-template-columns: repeat(2, minmax(0, 1fr)); `
 export const GTCol3 = css` grid-template-columns: repeat(3, minmax(0, 1fr)); `
@@ -127,6 +102,7 @@ export const GTCol11 = css` grid-template-columns: repeat(11, minmax(0, 1fr)); `
 export const GTCol12 = css` grid-template-columns: repeat(12, minmax(0, 1fr)); `
 
 // ==== Grid Template Columns - Auto Fill ====
+export const GTCAutoFill = css` grid-template-columns: repeat(auto-fill, minmax(${props => props.gtcAutoFill}, 1fr)); `
 export const GTCAutoFill1 = css` grid-template-columns: repeat(auto-fill, minmax(1rem, 1fr)); `
 export const GTCAutoFill2 = css` grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr)); `
 export const GTCAutoFill3 = css` grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr)); `
