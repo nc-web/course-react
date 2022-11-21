@@ -1,5 +1,5 @@
 
-import { } from 'react'
+import {} from 'react'
 
 // Router
 import { Link } from 'react-router-dom'
@@ -14,16 +14,15 @@ import P from '@components/p'
 const Menu = () => {
   return (
     <>
-     <Nav displayFlex jcSpaceBetween aiCenter padding='0.8rem' bgGray600>
-      <Div>
-        <H4 textWhite> Exercises Cards </H4>
-      </Div>
-
-      <Div displayFlex jcCenter aiCenter>
-        <Ul> <Link to="/"><P textWhite>Inicio</P></Link></Ul>
-        <Ul> <Link to="/card-jenny"><P textWhite>Card Jenny</P></Link></Ul>
-        <Ul> <Link to="/card-andres"><P textWhite>Card Andres</P></Link></Ul>
-      </Div>
+        <Nav displayFlex jcSpaceBetween aiCenter padding='0.8rem' bgGray600>
+            <Div>
+                <H4 textWhite>EXERCISES CARDS</H4>
+            </Div>
+            <Div displayFlex jcCenter aiCenter>
+                <Ul><Link to="/"><P textWhite>Inicio</P></Link></Ul>
+                <Ul><Link to="/card-jenny"><P textWhite>Card Jenny</P></Link></Ul>
+                <Ul><Link to="/card-andres"><P textWhite>Card Andres</P></Link></Ul>
+            </Div>
       </Nav>
     </>
   )

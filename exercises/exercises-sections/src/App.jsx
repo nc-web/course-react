@@ -1,13 +1,13 @@
 
-import { } from 'react'
+import {} from 'react'
 
-// Card
+// Cards
 import CardJenny from '@views/sections-header/index'
 
 const App = () => {
   return (
     <>
-      <CardJenny/>
+      <CardJenny />
     </>
   )
 }

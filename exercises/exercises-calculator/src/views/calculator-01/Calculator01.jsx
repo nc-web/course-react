@@ -42,8 +42,8 @@ const Calculator = () => {
 
   const handleCalculate = (e) => {
     setStateDisplay1(eval(stateCurrent).toString())
-    //setStateDisplay2('')
-    //setStateCurrent('0')
+    // setStateDisplay2('')
+    // setStateCurrent('0')
   }
 
   return (
@@ -54,11 +54,11 @@ const Calculator = () => {
             <H1 ref={refDisplay1} textGray800>{stateDisplay1}</H1>
           </Div>
           <Div textRight marginY='0.5rem'>
-            <P fontSize18 textGray700>{stateDisplay2}</P>
+            <P fontSize='18px' textGray700>{stateDisplay2}</P>
           </Div>
         </Div>
 
-        <Div displayGrid jcCenter gtCol4 gap8 marginY='1rem'>
+        <Div displayGrid jcCenter gtCol4 gap='.4rem' marginY='1rem'>
           <Button name='C' id='clear' onClick={handleClear} button6>C</Button>
           <Button name='Error' onClick={handleButtons}>+/-</Button>
           <Button name='%' onClick={handleButtons}>%</Button>

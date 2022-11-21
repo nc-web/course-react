@@ -1,5 +1,5 @@
 
-import { } from 'react'
+import {} from 'react'
 
 // NC Components Base
 import Main from '@components/main'
@@ -13,15 +13,14 @@ import CardJenny01 from '@views/nav/cards/CardJenny01'
 const Index = () => {
   return (
     <>
-        <Main>
-          <Div>
-            <H4> Home </H4>
-          </Div>
-
-          <Div>
-            <CardJenny01/>
-          </Div>
-        </Main>
+      <Main>
+        <Div>
+          <H4>HOME</H4>
+        </Div>
+        <Div>
+          <CardJenny01 />
+        </Div>
+      </Main>
     </>
   )
 }

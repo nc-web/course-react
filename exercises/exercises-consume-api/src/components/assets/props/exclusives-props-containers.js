@@ -6,7 +6,7 @@ import {
   ACFlexStart, ACFlexCenter, ACFlexEnd, ACSpaceAround, ACSpaceBetween, ACStretch,
   AIFlexStart, AICenter, AIFlexEnd, AIStretch, AIBaseline,
   ASFlexStart, ASCenter, ASFlexEnd, ASStretch, ASBaseline, ASAuto,
-
+  DirectionLTR, DirectionRTL,
   DisplayBlock, DisplayInline, DisplayInlineBlock, DisplayFlex, DisplayInlineFlex, DisplayGrid, DisplayInlineGrid, DisplayFlowRoot,
   DisplayNone, DisplayContents,
   DisplayTable, DisplayTableRow, DisplaylistItem,
@@ -14,23 +14,18 @@ import {
   DisplayBlockFlow, DisplayInlineFlow, DisplayInlineFlowRoot, DisplayBlockFlex,
   DisplayBlockGrid,
   DisplayBlockFlowRoot,
-
-  Gap1, Gap2, Gap3, Gap4, Gap5, Gap6, Gap7, Gap8, Gap9, Gap10, Gap11, Gap12, Gap13, Gap14, Gap15, Gap16, Gap17, Gap18, Gap19, Gap20,
-  Gap21, Gap22, Gap23, Gap24, Gap25, Gap26, Gap27, Gap28, Gap29, Gap30, Gap31, Gap32, Gap33, Gap34, Gap35, Gap36, Gap37, Gap38, Gap39, Gap40,
-
+  Flex, FlexDirectionColumn, FlexDirectionRow, FlexDirectionColumnReverse, FlexDirectionRowReverse,
+  Gap,
   GTColNone, GTCol1, GTCol2, GTCol3, GTCol4, GTCol5, GTCol6, GTCol7, GTCol8, GTCol9, GTCol10, GTCol11, GTCol12,
-
   GTCAutoFill1, GTCAutoFill2, GTCAutoFill3, GTCAutoFill4, GTCAutoFill5, GTCAutoFill6, GTCAutoFill7, GTCAutoFill8, GTCAutoFill9, GTCAutoFill10,
   GTCAutoFill11, GTCAutoFill12, GTCAutoFill13, GTCAutoFill14, GTCAutoFill15, GTCAutoFill16, GTCAutoFill17, GTCAutoFill18, GTCAutoFill19, GTCAutoFill20,
-
   GTCAutoFit1, GTCAutoFit2, GTCAutoFit3, GTCAutoFit4, GTCAutoFit5, GTCAutoFit6, GTCAutoFit7, GTCAutoFit8, GTCAutoFit9, GTCAutoFit10,
   GTCAutoFit11, GTCAutoFit12, GTCAutoFit13, GTCAutoFit14, GTCAutoFit15, GTCAutoFit16, GTCAutoFit17, GTCAutoFit18, GTCAutoFit19, GTCAutoFit20,
-
   JCFlexStart, JCCenter, JCFlexEnd, JCSpaceAround, JCSpaceBetween, JCSpaceEvely
 
 }
 
-  from '@components/assets/props/exclusives-props-containers-css'
+  from './exclusives-props-containers-css'
 
 const exclusivesPropsContainers = css`
 
@@ -56,6 +51,10 @@ const exclusivesPropsContainers = css`
     ${props => props.asStretch && css` ${ASStretch} `}
     ${props => props.asBaseline && css` ${ASBaseline} `}
     ${props => props.asAuto && css` ${ASAuto} `}
+
+    /* DIRECTION */
+    ${props => props.directionLTR && css` ${DirectionLTR} `}
+    ${props => props.directionRTL && css` ${DirectionRTL} `}
 
     /* DISPLAY */
     /* Display - Legacy values */
@@ -87,6 +86,15 @@ const exclusivesPropsContainers = css`
     ${props => props.displayBlockGrid && css` ${DisplayBlockGrid} `}
     ${props => props.displayBlockFlowRoot && css` ${DisplayBlockFlowRoot} `}
 
+    /* FLEX */
+    ${props => props.flex && css` ${Flex} `}
+
+    /* FLEX DIRECTION */
+    ${props => props.flexDirectionColumn && css` ${FlexDirectionColumn} `}
+    ${props => props.flexDirectionRow && css` ${FlexDirectionRow} `}
+    ${props => props.flexDirectionColumnReverse && css` ${FlexDirectionColumnReverse} `}
+    ${props => props.flexDirectionRowReverse && css` ${FlexDirectionRowReverse} `}
+
     /* JUSTIFY CONTENT */
     ${props => props.jcFlexStart && css` ${JCFlexStart} `}
     ${props => props.jcCenter && css` ${JCCenter} `}
@@ -96,47 +104,8 @@ const exclusivesPropsContainers = css`
     ${props => props.jcSpaceEvely && css` ${JCSpaceEvely} `}
 
      /* GAP */
-    ${props => props.gap1 && css` ${Gap1} `}
-    ${props => props.gap2 && css` ${Gap2} `}
-    ${props => props.gap3 && css` ${Gap3} `}
-    ${props => props.gap4 && css` ${Gap4} `}
-    ${props => props.gap5 && css` ${Gap5} `}
-    ${props => props.gap6 && css` ${Gap6} `}
-    ${props => props.gap7 && css` ${Gap7} `}
-    ${props => props.gap8 && css` ${Gap8} `}
-    ${props => props.gap9 && css` ${Gap9} `}
-    ${props => props.gap10 && css` ${Gap10} `}
-    ${props => props.gap11 && css` ${Gap11} `}
-    ${props => props.gap12 && css` ${Gap12} `}
-    ${props => props.gap13 && css` ${Gap13} `}
-    ${props => props.gap14 && css` ${Gap14} `}
-    ${props => props.gap15 && css` ${Gap15} `}
-    ${props => props.gap16 && css` ${Gap16} `}
-    ${props => props.gap17 && css` ${Gap17} `}
-    ${props => props.gap18 && css` ${Gap18} `}
-    ${props => props.gap19 && css` ${Gap19} `}
-    ${props => props.gap20 && css` ${Gap20} `}
-    ${props => props.gap21 && css` ${Gap21} `}
-    ${props => props.gap22 && css` ${Gap22} `}
-    ${props => props.gap23 && css` ${Gap23} `}
-    ${props => props.gap24 && css` ${Gap24} `}
-    ${props => props.gap25 && css` ${Gap25} `}
-    ${props => props.gap26 && css` ${Gap26} `}
-    ${props => props.gap27 && css` ${Gap27} `}
-    ${props => props.gap28 && css` ${Gap28} `}
-    ${props => props.gap29 && css` ${Gap29} `}
-    ${props => props.gap30 && css` ${Gap30} `}
-    ${props => props.gap31 && css` ${Gap31} `}
-    ${props => props.gap32 && css` ${Gap32} `}
-    ${props => props.gap33 && css` ${Gap33} `}
-    ${props => props.gap34 && css` ${Gap34} `}
-    ${props => props.gap35 && css` ${Gap35} `}
-    ${props => props.gap36 && css` ${Gap36} `}
-    ${props => props.gap37 && css` ${Gap37} `}
-    ${props => props.gap38 && css` ${Gap38} `}
-    ${props => props.gap39 && css` ${Gap39} `}
-    ${props => props.gap40 && css` ${Gap40} `}
-
+    ${props => props.gap && css` ${Gap} `}
+    
     /* GRID TEMPLATE COLUMNS */
     ${props => props.gtCol1 && css` ${GTCol1} `}
     ${props => props.gtCol2 && css` ${GTCol2} `}
@@ -195,7 +164,6 @@ const exclusivesPropsContainers = css`
     ${props => props.gtcAutoFit18 && css` ${GTCAutoFit18} `}
     ${props => props.gtcAutoFit19 && css` ${GTCAutoFit19} `}
     ${props => props.gtcAutoFit20 && css` ${GTCAutoFit20} `}
-
 
 `
 

@@ -1,10 +1,10 @@
 
-import { } from 'react'
+import {} from 'react'
 
 const Card01 = () => {
   return (
     <>
-    Card01 Jenny
+        Card01 Jenny
     </>
   )
 }

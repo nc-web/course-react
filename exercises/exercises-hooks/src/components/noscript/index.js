@@ -2,14 +2,14 @@
 import styled from 'styled-components'
 
 // Colors
-import colorsBG from '@components/assets/colors/colors-bg'
-import colorsText from '@components/assets/colors/colors-text'
+import colorsBG from '../assets/colors/colors-bg'
+import colorsText from '../assets/colors/colors-text'
 
 // PROPS
 // Global props
-import globalProps from '@components/assets/props/global-props'
+import globalProps from '../assets/props/global-props'
 // Exclusive props text
-import exclusivesPropsText from '@components/assets/props/exclusives-props-text'
+import exclusivesPropsText from '../assets/props/exclusives-props-text'
 
 const Noscript = styled.noscript`
 

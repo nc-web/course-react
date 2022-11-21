@@ -2,17 +2,17 @@
 import Styled from 'styled-components'
 
 // Fonts
-import roboto from '@components/assets/fonts/fonts'
+import roboto from '../assets/fonts/fonts'
 
 // Colors
-import colorsBG from '@components/assets/colors/colors-bg'
-import colorsText from '@components/assets/colors/colors-text'
+import colorsBG from '../assets/colors/colors-bg'
+import colorsText from '../assets/colors/colors-text'
 
 // Props base
-import globalProps from '@components/assets/props/global-props'
+import globalProps from '../assets/props/global-props'
 
 // Props exclusives containers
-import exclusivesPropsContainers from '@components/assets/props/exclusives-props-containers'
+import exclusivesPropsContainers from '../assets/props/exclusives-props-containers'
 
 const Aside = Styled.aside`
 

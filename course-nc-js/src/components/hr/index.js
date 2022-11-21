@@ -2,10 +2,10 @@
 import styled, { css } from 'styled-components'
 
 // Props base
-import globalProps from '@components/assets/props/global-props'
+import globalProps from '../assets/props/global-props'
 
 // Colors
-import colorsBG from '@components/assets/colors/colors-bg'
+import colorsBG from '../assets/colors/colors-bg'
 
 // ========================= SEPARATOR BASE ====================
 const SeparatorBase = css`

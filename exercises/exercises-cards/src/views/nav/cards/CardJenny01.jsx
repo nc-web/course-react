@@ -1,20 +1,21 @@
-import { } from 'react'
+
+import {} from 'react'
 import { Link } from 'react-router-dom'
 
-// NC Components Base
+// Nc Componentes Base
 import Div from '@components/div'
-import H6 from '@components/h6'
-import P from '@components/p'
+import H6 from '@components/H6'
+import P from '@components/P'
 
 const CardJenny01 = () => {
   return (
     <>
-    <Link to='/card-jenny'>
-        <Div bgGray400>
-            <H6>Card Jenny 01</H6>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+        <Link to='/card-jenny'>
+            <Div bgGray400>
+                <H6>Card Jenny 01</H6>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
             </Div>
-    </Link>
+        </Link>
     </>
   )
 }

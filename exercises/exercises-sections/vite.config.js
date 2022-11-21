@@ -20,6 +20,12 @@ export default defineConfig({
         find: '@components', replacement: path.resolve(__dirname, 'src/components')
       },
       {
+        find: '@layouts', replacement: path.resolve(__dirname, 'src/layouts')
+      },
+      {
+        find: '@pages', replacement: path.resolve(__dirname, 'src/pages')
+      },
+      {
         find: '@router', replacement: path.resolve(__dirname, 'src/router')
       },
       {
@@ -27,4 +33,5 @@ export default defineConfig({
       }
     ]
   }
+
 })

@@ -2,15 +2,15 @@
 import Styled, { css } from 'styled-components'
 
 // Fonts
-import roboto from '@components/assets/fonts/fonts'
+import roboto from '../assets/fonts/fonts'
 
 // Colors
-import colorsBG from '@components/assets/colors/colors-bg'
-import colorsText from '@components/assets/colors/colors-text'
+import colorsBG from '../assets/colors/colors-bg'
+import colorsText from '../assets/colors/colors-text'
 
 // PROPS
 // Global props
-import globalProps from '@components/assets/props/global-props'
+import globalProps from '../assets/props/global-props'
 
 // ========================= BUTTON BASE ============================
 const buttonBase = css`
