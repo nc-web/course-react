@@ -5,20 +5,22 @@ import {} from 'react'
 import Main from '@components/main'
 import Div from '@components/div'
 import H4 from '@components/h4'
-import P from '@components/p'
 
 // Cards
-import CardJenny01 from '@views/nav/cards/CardJenny01'
+import CardJenny from '@views/home/cards/CardJenny01'
+import CardAndres from '@views/home/cards/CardAndres'
 
 const Index = () => {
   return (
     <>
-      <Main>
-        <Div>
-          <H4>HOME</H4>
+      <Main displayGrid jcCenter padding="2rem" bgGray200>
+        <Div marginT='1rem' marginB='2rem'>
+          <H4 textCenter textGray800> EXERCISES CARDS REACT </H4>
         </Div>
-        <Div>
-          <CardJenny01 />
+
+        <Div displayGrid gtCol4 gap='1rem' jcCenter>
+          <CardJenny />
+          <CardAndres />
         </Div>
       </Main>
     </>

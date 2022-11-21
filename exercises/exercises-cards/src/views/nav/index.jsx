@@ -20,8 +20,8 @@ const Menu = () => {
             </Div>
             <Div displayFlex jcCenter aiCenter>
                 <Ul><Link to="/"><P textWhite>Inicio</P></Link></Ul>
-                <Ul><Link to="/card-jenny"><P textWhite>Card Jenny</P></Link></Ul>
-                <Ul><Link to="/card-andres"><P textWhite>Card Andres</P></Link></Ul>
+                <Ul><Link to="/card-jenny"><P textWhite>Cards Jenny</P></Link></Ul>
+                <Ul><Link to="/card-andres"><P textWhite>Cards Andres</P></Link></Ul>
             </Div>
       </Nav>
     </>
