@@ -1,9 +1,13 @@
 
 import {} from 'react'
 import styled from 'styled-components'
+import Icon from '@mdi/react'
 
 // Componens
-import { ButtonBigGreen, ButtonBigRed } from './components/buttons'
+import { ButtonBig } from './components/buttons'
+
+// Icons
+import { mdiPhone, mdiEmail, mdiPhoneHangup } from '@mdi/js'
 
 // Img
 import Bob from '/img/bob.webp'
@@ -11,11 +15,12 @@ import Bob from '/img/bob.webp'
 const Card = styled.div`
   width: 18rem;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px .3rem .1rem rgba(0, 0, 0, 0.3);
   background-color: #673AB7;
 `
 
-const Div = styled.div`
+const DivHeader = styled.div`
     display: grid;
     justify-content: center; 
 `
@@ -25,7 +30,7 @@ const Img01 = styled.img`
   border-radius: 50%;
 `
 
-const H4 = styled.h4`
+const H3 = styled.h3`
   text-align: center;
   color: #FFFFFF;
 `
@@ -35,23 +40,30 @@ const P = styled.p`
   color: #FFFFFF;
 `
 
+const DivFooter = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`
+
 const CardCall01 = () => {
   return (
     <>
     <Card>
-      <Div>
+      <DivHeader>
         <Img01 src={Bob} />
-      </Div>
+      </DivHeader>
 
-      <Div>
-        <H4> CardCall01 </H4>
+      <div>
+        <H3> CardCall01 </H3>
         <P> Bob </P>
-      </Div>
+      </div>
 
-      <Div>
-        <ButtonBigRed> J </ButtonBigRed>
-        <ButtonBigGreen> A </ButtonBigGreen>
-      </Div>
+      <DivFooter>
+        <ButtonBig bgColor='#4CAF50'> <Icon path={mdiPhone} size='2rem' color='#FFFF'/> </ButtonBig>
+        <Icon path={mdiEmail} size='2rem' color='#455A64'/>
+        <ButtonBig bgColor='#EF5350'> <Icon path={mdiPhoneHangup} size='2rem' color='#FFFF'/> </ButtonBig>
+      </DivFooter>
     </Card>
     </>
   )
