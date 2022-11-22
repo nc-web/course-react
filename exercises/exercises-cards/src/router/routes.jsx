@@ -6,8 +6,8 @@ import { Routes, Route } from 'react-router-dom'
 
 // Views
 import Home from '@views/home'
-import CardJenny01 from '@views/cards-jenny-gomez/Card01'
-import CardAndres01 from '@views/cards-andres-giraldo/Card01'
+import CardJenny01 from '@views/cards-jenny-gomez'
+import CardAndres01 from '@views/cards-andres-giraldo'
 
 const routes = () => {
   return (
