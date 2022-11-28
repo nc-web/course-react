@@ -17,7 +17,7 @@ export default defineConfig({
         find: '@assets', replacement: path.resolve(__dirname, 'src/assets')
       },
       {
-        find: '@components', replacement: path.resolve(__dirname, 'src/components')
+        find: '@components', replacement: path.resolve(__dirname, 'src/nc-styles/components')
       },
       {
         find: '@router', replacement: path.resolve(__dirname, 'src/router')
