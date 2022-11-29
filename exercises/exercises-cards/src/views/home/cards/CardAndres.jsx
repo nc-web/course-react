@@ -30,7 +30,7 @@ const CardAndres01 = () => {
   return (
     <>
         <Card backGroundBlue100 boxShadowBR2>
-        <Div displayGrid jcCenter>
+        <Div displayGrid justifyContent='center'>
           <ImageAndres src={Andres} alt='Andres Giraldo' />
         </Div>
 
