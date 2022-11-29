@@ -29,17 +29,17 @@ const ImageAndres = styled(Img)`
 const CardAndres01 = () => {
   return (
     <>
-        <Card bgBlue100 boxShadowBR2>
+        <Card backGroundBlue100 boxShadowBR2>
         <Div displayGrid jcCenter>
           <ImageAndres src={Andres} alt='Andres Giraldo' />
         </Div>
 
         <Div>
-          <H5 textCenter textGray800 marginT='.8rem'> Andres Giraldo </H5>
-          <P textCenter textGray600 marginT='.2rem'> Developer Web </P>
+          <H5 textAlingCenter colorGray800 marginTop='.8rem'> Andres Giraldo </H5>
+          <P textAlingCenter colorGray600 marginTop='.2rem'> Developer Web </P>
         </Div>
 
-        <Div displayGrid jcCenter marginT='1.1rem'>
+        <Div displayGrid jcCenter marginTop='1.1rem'>
           <Link to='/card-andres'>
             <Button button5 bgWhite textGray600> Ver </Button>
           </Link>

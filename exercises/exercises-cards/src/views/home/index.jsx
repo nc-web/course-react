@@ -13,12 +13,12 @@ import CardAndres from '@views/home/cards/CardAndres'
 const Index = () => {
   return (
     <>
-      <Main display='Grid' justifyContent='center' padding='2rem' bgGray200>
+      <Main display='grid' justifyContent='center' padding='2rem' backGroundGray200>
         <Div marginT='1rem' marginB='2rem'>
           <H4 textAling='center' textGray800> EXERCISES CARDS REACT </H4>
         </Div>
 
-        <Div display='grid' gridTemplateColumns='' gap='1rem' jcCenter>
+        <Div display='grid' gridTemplateColumns='repeat(1, minmax(0, 1fr))' gap='1rem' justifyContent='center'>
           <CardJenny />
           <CardAndres />
         </Div>
