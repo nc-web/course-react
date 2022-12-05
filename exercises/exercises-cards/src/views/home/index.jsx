@@ -9,7 +9,7 @@ import CardAndres from '@views/home/cards/CardAndres'
 const Index = () => {
   return (
     <>
-      <Main display='grid' justifyContent='center' padding='2rem' backGroundGray200>
+      <Main display='grid' justifyContent='center' padding='2rem' bgColorGray200>
         <Div marginT='1rem' marginB='2rem'>
           <H4 textAling='center' colorGray800> EXERCISES CARDS REACT </H4>
         </Div>
