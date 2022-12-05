@@ -214,8 +214,8 @@ const MenuVertical = () => {
                 </GridContainer>
 
                 <GridContainer marginY4 center>
-                    <Typography textWhite center> MENU </Typography>
-                    <Typography textWhite> REACT HOOKS </Typography>
+                    <Typography colorWhite center> MENU </Typography>
+                    <Typography colorWhite> REACT HOOKS </Typography>
                 </GridContainer>
 
 

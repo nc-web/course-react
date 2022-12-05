@@ -13,7 +13,7 @@ import Button from '@components/button'
 const ErrorPage = () => {
   return (
     <>
-      <Header bgGray200>
+      <Header bgColorGray200>
         <Div>
           <H2>ERROR PAGE</H2>
         </Div>
@@ -24,7 +24,7 @@ const ErrorPage = () => {
           </A>
         </Div>
       </Header>
-      <Footer bgGray600>
+      <Footer bgColorGray600>
         <Div>
           <H6>Newsoft Computer</H6>
         </Div>

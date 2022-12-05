@@ -48,10 +48,10 @@ const Calculator = () => {
 
   return (
     <>
-      <Div bgGray200 padding='1.5rem' borderRadius='0.5rem' boxShadowBR2>
+      <Div bgColorGray200 padding='1.5rem' borderRadius='0.5rem' boxShadowBR2>
         <Div bgGray100 paddingX='1rem' paddingY='0.5rem'>
           <Div textRight marginY='0.5rem'>
-            <H1 ref={refDisplay1} textGray800>{stateDisplay1}</H1>
+            <H1 ref={refDisplay1} colorGray800>{stateDisplay1}</H1>
           </Div>
           <Div textRight marginY='0.5rem'>
             <P fontSize='18px' textGray700>{stateDisplay2}</P>
@@ -62,22 +62,22 @@ const Calculator = () => {
           <Button name='C' id='clear' onClick={handleClear} button6>C</Button>
           <Button name='Error' onClick={handleButtons}>+/-</Button>
           <Button name='%' onClick={handleButtons}>%</Button>
-          <Button name='/' onClick={handleButtons} bgGray600 textWhite>/</Button>
+          <Button name='/' onClick={handleButtons} bgColorGray600 colorWhite>/</Button>
 
           <Button name='1' onClick={handleButtons} button6>1</Button>
           <Button name='2' onClick={handleButtons}>2</Button>
           <Button name='3' onClick={handleButtons}>3</Button>
-          <Button name='*' onClick={handleButtons} bgGray600 textWhite>x</Button>
+          <Button name='*' onClick={handleButtons} bgColorGray600 colorWhite>x</Button>
 
           <Button name='4' onClick={handleButtons} button6>4</Button>
           <Button name='5' onClick={handleButtons}>5</Button>
           <Button name='6' onClick={handleButtons}>6</Button>
-          <Button name='-' onClick={handleButtons} bgGray600 textWhite>-</Button>
+          <Button name='-' onClick={handleButtons} bgColorGray600 colorWhite>-</Button>
 
           <Button name='7' onClick={handleButtons} button6>7</Button>
           <Button name='8' onClick={handleButtons}>8</Button>
           <Button name='9' onClick={handleButtons}>9</Button>
-          <Button name='+' onClick={handleButtons} bgGray600 textWhite>+</Button>
+          <Button name='+' onClick={handleButtons} bgColorGray600 colorWhite>+</Button>
 
           <Button name='0' onClick={handleButtons} button6>0</Button>
           <Button name='.' onClick={handleButtons}>.</Button>

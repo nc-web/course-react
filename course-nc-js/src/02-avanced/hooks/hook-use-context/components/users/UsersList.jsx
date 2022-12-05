@@ -53,12 +53,12 @@ const UsersList = () => {
 
         <Div displayFlex jcCenter aiCenter bgBlue500 padding3 radiusTL1 radiusTR1>
           <Icon path={mdiTextBoxOutline} title='API Users' size={1.3} color='#FFFFFF' />
-          <P fontSize6 textWhite padding5 marginT1> API USERS LIST </P>
+          <P fontSize6 colorWhite padding5 marginT1> API USERS LIST </P>
         </Div>
 
-        <Table bgWhite padding10>
+        <Table bgColorWhite padding10>
           <THead>
-            <Tr bgGray600 textWhite>
+            <Tr bgColorGray600 colorWhite>
               <Th radiusTL1 radiusTR1> <P fontSize7 marginY1 marginX3> ID </P> </Th>
               <Th radiusTL1 radiusTR1> <P fontSize7> Name </P></Th>
               <Th radiusTL1 radiusTR1> <P fontSize7> Email </P></Th>

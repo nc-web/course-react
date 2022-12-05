@@ -1,50 +1,30 @@
 
 import {} from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-
-// Nc Componentes Base
-import Article from '@components/article'
-import Div from '@components/div'
-import Img from '@components/img'
-import Button from '@components/button'
-import H5 from '@components/h5'
-import P from '@components/p'
+import { Article, Div, Img, Button, H5, P } from 'nc-styles-js'
 
 // Image
 import Jenny from '/img/jenny.webp'
 
-const Card = styled(Article)`
-  padding: 1rem;
-  border-radius: .8rem;
-  border: 2px solid white;
-  width: 17rem;
-`
-
-const ImageJenny = styled(Img)`
-  width: 8rem;
-  border-radius: 50%;
-`
-
 const CardJenny01 = () => {
   return (
     <>
-        <Card bgBlue100 boxShadowBR2>
+        <Article padding='1rem' borderRadius='.8rem' border='.125rem solid white' width='17rem' bgColorBlue100 boxShadowBR2>
         <Div displayGrid jcCenter>
-          <ImageJenny src={Jenny} alt='jenny gomez' />
+          <Img src={Jenny} alt='jenny gomez' width='8rem' borderRadius='50%' />
         </Div>
 
         <Div>
-          <H5 textCenter textGray800 marginT='.8rem'> Jenny Gómez </H5>
-          <P textCenter textGray600 marginT='.2rem'> Maquetadora Web </P>
+          <H5 textCenter colorGray800 marginT='.8rem'> Jenny Gómez </H5>
+          <P textCenter colorGray600 marginT='.2rem'> Maquetadora Web </P>
         </Div>
 
         <Div displayGrid jcCenter marginT='1.1rem'>
           <Link to='/card-jenny'>
-            <Button button5 bgWhite textGray600> Ver </Button>
+            <Button button5 bgColorWhite colorGray600> Ver </Button>
           </Link>
         </Div>
-      </Card>
+      </Article>
     </>
   )
 }

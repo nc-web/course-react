@@ -18,7 +18,7 @@ function useContextAPIUser () {
       <UserState>
         <Div>
           <Div bgTeal600 paddingY10>
-            <H4 textCenter textWhite> API CONTEXT</H4>
+            <H4 textCenter colorWhite> API CONTEXT</H4>
           </Div>
 
           <Div displayFlex>

@@ -30,7 +30,7 @@ const colorsBG = css`
 
     /* ============================== COLORS ================================= */
     /* White */
-    ${props => props.bgWhite && css` background-color: ${white}; `}
+    ${props => props.bgColorWhite && css` background-color: ${white}; `}
     
     /* Black */
     ${props => props.bgBlack && css` background-color: ${black}; `}
@@ -116,7 +116,7 @@ const colorsBG = css`
 
     /* Blue */
     ${props => props.bgBlue50 && css` background-color: ${blue[50]}; `}
-    ${props => props.bgBlue100 && css` background-color: ${blue[100]}; `}
+    ${props => props.bgColorBlue100 && css` background-color: ${blue[100]}; `}
     ${props => props.bgBlue200 && css` background-color: ${blue[200]}; `}
     ${props => props.bgBlue300 && css` background-color: ${blue[300]}; `}
     ${props => props.bgBlue400 && css` background-color: ${blue[400]}; `}
@@ -309,11 +309,11 @@ const colorsBG = css`
     /* Gray */
     ${props => props.bgGray50 && css` background-color: ${gray[50]}; `}
     ${props => props.bgGray100 && css` background-color: ${gray[100]}; `}
-    ${props => props.bgGray200 && css` background-color: ${gray[200]}; `}
+    ${props => props.bgColorGray200 && css` background-color: ${gray[200]}; `}
     ${props => props.bgGray300 && css` background-color: ${gray[300]}; `}
     ${props => props.bgGray400 && css` background-color: ${gray[400]}; `}
     ${props => props.bgGray500 && css` background-color: ${gray[500]}; `}
-    ${props => props.bgGray600 && css` background-color: ${gray[600]}; `}
+    ${props => props.bgColorGray600 && css` background-color: ${gray[600]}; `}
     ${props => props.bgGray700 && css` background-color: ${gray[700]}; `}
     ${props => props.bgGray800 && css` background-color: ${gray[800]}; `}
     ${props => props.bgGray900 && css` background-color: ${gray[900]}; `}

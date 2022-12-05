@@ -79,7 +79,7 @@ const ScrollHooks = () => {
             <LayoutDashboard>
                 <ContainerMain>
                     <ContainerScroll bgOrange500>
-                        <Typography h4 textGray800> SCROLL HOOKS </Typography>
+                        <Typography h4 colorGray800> SCROLL HOOKS </Typography>
                         <Typography> Desplace el scroll para ver su posicion en Y </Typography>
                         <Typography h2 textPink500>  { scrollY } px </Typography>
                     </ContainerScroll>

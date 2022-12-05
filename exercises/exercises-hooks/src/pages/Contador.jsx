@@ -21,7 +21,7 @@ const Contador = () => {
 
                     <GridContainer marginY5>
                         <Typography h4 center textGray700> CONTADOR </Typography>
-                        <Typography p2 center textGray600> useState </Typography>
+                        <Typography p2 center colorGray600> useState </Typography>
                     </GridContainer>
 
                     <GridContainer marginY5>

@@ -30,7 +30,7 @@ const colorsText = css`
 
     /* ============================== COLORS ================================= */
     /* White */
-    ${props => props.textWhite && css` color: ${white}; `}
+    ${props => props.colorWhite && css` color: ${white}; `}
     
     /* Black */
     ${props => props.textBlack && css` color: ${black}; `}
@@ -313,9 +313,9 @@ const colorsText = css`
     ${props => props.textGray300 && css` color: ${gray[300]}; `}
     ${props => props.textGray400 && css` color: ${gray[400]}; `}
     ${props => props.textGray500 && css` color: ${gray[500]}; `}
-    ${props => props.textGray600 && css` color: ${gray[600]}; `}
+    ${props => props.colorGray600 && css` color: ${gray[600]}; `}
     ${props => props.textGray700 && css` color: ${gray[700]}; `}
-    ${props => props.textGray800 && css` color: ${gray[800]}; `}
+    ${props => props.colorGray800 && css` color: ${gray[800]}; `}
     ${props => props.textGray900 && css` color: ${gray[900]}; `}
     ${props => props.textGrayA100 && css` color: ${gray.a100}; `}
     ${props => props.textGrayA200 && css` color: ${gray.a200}; `}

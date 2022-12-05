@@ -1,10 +1,6 @@
 
 import {} from 'react'
-
-// NC Components Base
-import Section from '@components/section'
-import Div from '@components/div'
-import H4 from '@components/h4'
+import { Section, Div, H4 } from 'nc-styles-js'
 
 // Cards Styled Components
 import CardCall01CSS from './cards-css/CardCall01'
@@ -14,9 +10,9 @@ import CardCall01CSSModule from './cards-css-module/CardCall01'
 const index = () => {
   return (
     <>
-      <Section displayGrid jcCenter padding="2rem" bgGray200>
+      <Section displayGrid jcCenter padding="2rem" bgColorGray200>
         <Div marginT='1rem' marginB='2rem'>
-          <H4 textCenter textGray800> EXERCISES JENNY GÓMEZ </H4>
+          <H4 textCenter colorGray800> EXERCISES JENNY GÓMEZ </H4>
         </Div>
 
         <Div displayGrid jcCenter>
