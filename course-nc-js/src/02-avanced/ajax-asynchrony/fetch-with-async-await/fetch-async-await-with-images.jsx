@@ -1,5 +1,5 @@
 
-import React, { Fragment, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const FetchPromisesWithImages = () => {
   const [data, setData] = useState([])
@@ -27,21 +27,21 @@ const FetchPromisesWithImages = () => {
       <h3> FETCH ASYNC AWAIT WITH IMAGES </h3>
 
       {
-                data.map(record => (
-                  <>
-                    <div>
-                      <div>
-                        <h4> ID {record.id} </h4>
-                        <p> Title: {record.title} </p>
-                      </div>
+        data.map(record => (
+          <>
+            <div>
+              <div>
+                <h4> ID {record.id} </h4>
+                <p> Title: {record.title} </p>
+              </div>
 
-                      <div>
-                        <img src={record.thumbnailUrl} />
-                      </div>
-                    </div>
-                  </>
-                ))
-            }
+              <div>
+                <img src={record.thumbnailUrl} />
+              </div>
+            </div>
+          </>
+        ))
+      }
 
     </>
   )

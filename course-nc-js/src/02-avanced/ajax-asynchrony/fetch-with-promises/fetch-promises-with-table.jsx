@@ -1,5 +1,5 @@
 
-import React, { Fragment, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const FetchPromisesWithTable = () => {
   const [data, setData] = useState([])
@@ -26,19 +26,17 @@ const FetchPromisesWithTable = () => {
         </thead>
         <tbody>
           {
-                        data.map(record => (
-                          <>
-
-                            <tr>
-                              <td> {record.id} </td>
-                              <td> {record.username} </td>
-                              <td> {record.name} </td>
-                              <td> {record.email} </td>
-                            </tr>
-
-                          </>
-                        ))
-                    }
+            data.map(record => (
+              <>
+                <tr>
+                  <td> {record.id} </td>
+                  <td> {record.username} </td>
+                  <td> {record.name} </td>
+                  <td> {record.email} </td>
+                </tr>
+              </>
+            ))
+          }
         </tbody>
       </table>
 

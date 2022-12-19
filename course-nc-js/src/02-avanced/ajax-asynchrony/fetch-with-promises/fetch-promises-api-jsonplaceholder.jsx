@@ -1,5 +1,5 @@
 
-import React, { Fragment, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const FetchReactPromises = () => {
   const [data, setData] = useState([])

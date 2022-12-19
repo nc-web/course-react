@@ -1,5 +1,5 @@
 
-import React, { Fragment, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const FetchReactAsync = () => {
   const [data, setData] = useState([])
