@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react'
 import { Div, Figure, Img, Figcaption, H4, P } from 'nc-styles-react'
 
@@ -44,22 +43,20 @@ const APIPokemons = () => {
 
   return (
     <>
-      <Div padding='1rem'>
+      <Div padding="1rem">
         <Div displayGrid jcCenter>
           <H4 textPink500> API Pokemon - Fetch useEffect</H4>
         </Div>
 
         <Div displayGrid jcCenter aiCenter gtcAutoFit18>
           {
-            pokemons.length === 0
-              ? (
-                <P> Cargando ... </P>
-              )
-              : (
-                pokemons.map((el) => (
-                  <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
-                ))
-              )
+          pokemons.length === 0 ? (
+            <P> Cargando ... </P>
+          ) : (
+            pokemons.map((el) => (
+              <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+            ))
+          )
           }
         </Div>
       </Div>

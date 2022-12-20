@@ -15,12 +15,14 @@ const APIRickAndMorty = () => {
     <>
       <Div displayGrid jcCenter>
         <Div className='Characters' displayGrid jcCenter gtcAutoFit18>
-          {characters.map(character => (
-            <Div key={character.id}>
-              <Img src={character.image} alt='' style={{ width: '150px' }} />
-              <P>{character.name}</P>
+          {
+          characters.map(x => (
+            <Div key={x.id}>
+              <Img src={x.image} alt='' style={{ width: '150px' }} />
+              <P>{x.name}</P>
             </Div>
-          ))}
+          ))
+          }
         </Div>
       </Div>
     </>

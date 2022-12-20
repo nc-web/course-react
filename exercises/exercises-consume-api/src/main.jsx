@@ -1,7 +1,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+// import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 // Global Styles
 import './assets/css/global.css'
@@ -10,8 +11,9 @@ import './assets/css/global.css'
 import App from './App'
 
 // Error Page
-import ErrorPage from '@views/error'
+// import ErrorPage from '@views/error'
 
+/*
 const router = createBrowserRouter([
   {
     path: '/',
@@ -19,15 +21,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   }
 ])
+*/
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* 
-    <BrowserRouter router={router}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
-    */}
 
-    <RouterProvider router={router}/>
+    {/* <RouterProvider router={router}/> */}
   </React.StrictMode>
 )
