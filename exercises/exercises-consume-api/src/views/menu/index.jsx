@@ -1,18 +1,22 @@
 
 import { } from 'react'
 import { Link } from 'react-router-dom'
-import { Nav, Ul, Div, H4, P } from 'nc-styles-react'
+import { Nav, Ul, Div, H5, P } from 'nc-styles-react'
 
 const Menu = () => {
   return (
         <>
-            <Nav displayFlex jcSpaceBetween aiCenter>
-                <Div><H4>EXERCISES CONSUME API</H4></Div>
-                <Div>
-                    <Ul><Link to='/'><P>Inicio</P></Link></Ul>
-                    <Ul><Link to='/api-basic-photos'><P>API Basic Photos</P></Link></Ul>
-                    <Ul><Link to='/api-pokemons'><P>API Pokemons</P></Link></Ul>
-                    <Ul><Link to='/api-rick-and-morty'><P>API Rick & Morty</P></Link></Ul>
+            <Nav>
+                <Div displayFlex jcSpaceBetween aiCenter padding='1rem' bgColorBlue400 boxShadowBR1>
+                    <Div>
+                        <H5 colorWhite>EXERCISES CONSUME API</H5>
+                    </Div>
+                    <Div displayFlex jcSpaceBetween aiCenter>
+                        <Ul><Link to='/'><P colorWhite>HOME</P></Link></Ul>
+                        <Ul><Link to='/promises'><P colorWhite>PROMISES</P></Link></Ul>
+                        <Ul><Link to='/api-pokemons'><P colorWhite>ASYNC AWAIT</P></Link></Ul>
+                        <Ul><Link to='/api-rick-and-morty'><P colorWhite>AXIOS</P></Link></Ul>
+                    </Div>
                 </Div>
             </Nav>
         </>
