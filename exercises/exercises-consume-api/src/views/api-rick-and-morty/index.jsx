@@ -1,10 +1,6 @@
 
-import React, { useState, useEffect } from 'react'
-
-// Components Base
-import Div from '@components/div'
-import Img from '@components/img'
-import P from '@components/p'
+import { useState, useEffect } from 'react'
+import { Div, Img, P } from 'nc-styles-react'
 
 const APIRickAndMorty = () => {
   const [characters, setCharacters] = useState([])

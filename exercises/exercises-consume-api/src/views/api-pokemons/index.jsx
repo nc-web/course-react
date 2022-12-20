@@ -1,13 +1,6 @@
 
-import React, { useState, useEffect } from 'react'
-
-// NC Components Base
-import Div from '@components/div'
-import Figure from '@components/figure'
-import Img from '@components/img'
-import Figcaption from '@components/figcaption'
-import H4 from '@components/h4'
-import P from '@components/p'
+import { useState, useEffect } from 'react'
+import { Div, Figure, Img, Figcaption, H4, P } from 'nc-styles-react'
 
 const Pokemon = ({ avatar, name }) => {
   return (

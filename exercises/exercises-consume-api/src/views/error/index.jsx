@@ -1,14 +1,6 @@
 
 import { } from 'react'
-
-// Components NC
-import Header from '@components/header'
-import Div from '@components/div'
-import Footer from '@components/footer'
-import H2 from '@components/h2'
-import H6 from '@components/h6'
-import A from '@components/a'
-import Button from '@components/button'
+import { Header, Div, Footer, H2, H6, A, Button } from 'nc-styles-react'
 
 const ErrorPage = () => {
   return (

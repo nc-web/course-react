@@ -1,30 +1,24 @@
-
-import { } from 'react'
+import {} from 'react'
 
 import { Routes, Route } from 'react-router-dom'
 
-// Routes
-import PageMenuInicio from '@pages/MenuInicio'
-// import PageContador from 'pages/Contador'
-// import PageScrollHooks from 'pages/ScrollHooks'
-import PageAPIPokemons from '@pages/APIPokemonsUseEffect'
-import PageAPIRickAndMorty from '@pages/APIRickAndMorty'
-// import PageContadorHoras from 'pages/ContadorHorasJonMircha'
-import PageError from '@pages/ErrorPage'
+// Views
+import Home from '@views/home'
+import APIBasicPhotos from '@views/api-basic-photos'
+import APIPokemons from '@views/api-pokemons'
+import APIRickAndMorty from '@views/api-rick-and-morty'
 
 const routes = () => {
   return (
     <>
       <Routes>
-        {/* <Route exact from='/' to='/menu-inicio' element={<PageMenuInicio />} /> */}
-        <Route path='/' element={<PageMenuInicio />} />
-        <Route path='/menu-inicio' element={<PageMenuInicio />} />
-        <Route path='/api-pokemons' element={<PageAPIPokemons />} />
-        <Route exact path='/api-rick-morty' element={<PageAPIRickAndMorty />} />
-        <Route element={PageError} exact />
+        <Route path='/' element={<Home />} />
+        <Route path='/api-basic-photos' element={<APIBasicPhotos />} />
+        <Route path='/api-pokemons' element={<APIPokemons />} />
+        <Route path='/api-rick-and-morty' element={<APIRickAndMorty />} />
       </Routes>
     </>
   )
 }
 
-export default routes
+export default routes;

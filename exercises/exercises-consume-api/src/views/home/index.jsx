@@ -1,7 +1,7 @@
 
 import {} from 'react'
 
-function index() {
+function Index () {
   return (
     <>
         Home
@@ -9,4 +9,4 @@ function index() {
   )
 }
 
-export default index
+export default Index
