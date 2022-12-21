@@ -17,6 +17,9 @@ export default defineConfig({
         find: '@assets', replacement: path.join(__dirname, 'src/assets')
       },
       {
+        find: '@router', replacement: path.join(__dirname, 'src/router')
+      },
+      {
         find: '@components', replacement: path.join(__dirname, 'src/components')
       },
       {
