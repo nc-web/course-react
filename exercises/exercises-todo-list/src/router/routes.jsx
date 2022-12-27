@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 
 // Views
 import Home from '@views/home'
-import AboutAs from '@views/about-as'
+import AboutAs from '@views/about'
+import TodoList01 from '@views/todo-list-01'
 
 const routes = () => {
   return (
@@ -11,6 +12,7 @@ const routes = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about-as' element={<AboutAs />} />
+                <Route path='/todo-list-01' element={<TodoList01 />} />
             </Routes>
         </>
   )

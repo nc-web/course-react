@@ -1,69 +1,24 @@
 
-import { useState, useEffect, useRef } from 'react'
+import {} from 'react'
+import { Section, Div, H4 } from 'nc-styles-react'
 
-// Components Base
-import Form from '@components/form'
-import Div from '@components/div'
-import H4 from '@components/h4'
-import P from '@components/p'
-import Input from '@components/input'
-import Button from '@components/button'
+// Todo List
+import TodoList01 from './TodoList01'
 
-// Components Advanced
-
-const index = () => {
-
-  const [stateTitle, setStateTitle] = useState('')
-  const [stateTodo, setStateTodo] = useState([])
-  const inputTodoRef = useRef(null)
-
-  useEffect(() => {
-
-    console.log('stateTodo :', stateTodo)
-
-  }, [stateTodo])
-
-  const handleChangeTodo = (e) => {
-    setStateTitle(e.target.value)
-  }
-
-  const handleAddTodo = (e) => {
-    
-    e.preventDefault()
-
-    const todo = {
-      id: Date.now(),
-      title: stateTitle,
-      complete: false
-    }
-
-    const newTodo = [...stateTodo]
-    newTodo.unshift(todo)
-    setStateTodo(newTodo)
-    setStateTitle('')
-  }
-
+const TodoListDesktop01 = () => {
   return (
     <>
-      <Div>
-        <H4>Todo List 01</H4>
-      </Div>
-      <Div>
-        <Form>
-          <Input type='text' onChange={handleChangeTodo} value={stateTitle} />
-          <Button onClick={handleAddTodo}>Add Todo</Button>
-        </Form>
-        
-      </Div>
-      <Div>
-        {
-          stateTodo.map((item) => (
-            <Div key={item.id}>{item.title}</Div>
-          ))
-        }
-      </Div>
+      <Section display='grid' justifyContent='center' padding='2rem' bgColorGray200>
+        <Div marginT='1rem' marginB='2rem'>
+          <H4 textAling='center' colorBlue600> EXERCISES TODO LIST 01 </H4>
+        </Div>
+
+        <Div display='grid' gridTemplateColumns='repeat(1, minmax(0, 1fr))' gap='1rem' justifyContent='center'>
+          <TodoList01 />
+        </Div>
+      </Section>
     </>
   )
 }
 
-export default index
+export default TodoListDesktop01

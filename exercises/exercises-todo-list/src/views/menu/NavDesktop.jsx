@@ -1,19 +1,19 @@
 
 import {} from 'react'
 import { Link } from 'react-router-dom'
-import { Nav, Div, H4, Ul } from 'nc-styles-react'
+import { Nav, Div, H5, Ul, P } from 'nc-styles-react'
 
 const NavDesktop = () => {
   return (
     <>
-        <Nav displayFlex jcSpaceBetween aiCenter>
+        <Nav displayFlex jcSpaceBetween aiCenter padding='.5rem' boxShadowBR1 bgColorBlue500 >
           <Div>
-            <H4>TODO LIST</H4>
+            <H5 colorWhite>TODO LIST</H5>
           </Div>
 
           <Div displayFlex jcCenter aiCener>
-            <Ul><Link to='/'>Home</Link></Ul>
-            <Ul><Link to='/about-as'>About As</Link></Ul>
+            <Ul><Link to='/'><P colorWhite>Home</P></Link></Ul>
+            <Ul><Link to='/about-as'><P colorWhite>About As</P></Link></Ul>
           </Div>
       </Nav>
     </>

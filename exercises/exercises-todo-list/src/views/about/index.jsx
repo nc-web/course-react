@@ -19,9 +19,7 @@ const Header = () => {
     tablet,
     laptop,
     laptopL,
-    screen2K,
-    screen4K,
-    screen8K
+    screen2K
   ] = useScreen()
 
   useEffect(() => {
