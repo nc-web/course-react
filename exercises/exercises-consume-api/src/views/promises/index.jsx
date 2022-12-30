@@ -5,6 +5,7 @@ import { Section, Div, H4 } from 'nc-styles-react'
 // Cards
 import CardAPI01 from './cards/CardAPI01'
 import CardAPI02 from './cards/CardAPI02'
+import CardAPI03 from './cards/CardAPI03'
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <Div display='grid' gtCol4 gap='1rem' justifyContent='center'>
           <CardAPI01 />
           <CardAPI02 />
+          <CardAPI03 />
         </Div>
       </Section>
     </>

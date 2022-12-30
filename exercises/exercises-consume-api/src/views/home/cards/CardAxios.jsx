@@ -16,8 +16,8 @@ const CardAPI01 = () => {
         </Div>
 
         <Div marginY='1rem'>
-          <H5 textCenter colorGray100 marginY='.3rem'> RICK AND MORTY </H5>
-          <P textCenter colorGray200 marginY='.3rem'> Axios </P>
+          <H5 textCenter colorGray100 marginY='.3rem'> BASIC PHOTOS </H5>
+          <P textCenter colorGray200 marginY='.3rem'> Promises </P>
         </Div>
 
         <Div>
@@ -26,7 +26,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div displayGrid jcCenter marginT='1.5rem'>
-          <Link to='#'>
+          <Link to='/async-await/api-basic-photos'>
             <Button button5 bgColorWhite colorGray600> Ver </Button>
           </Link>
         </Div>

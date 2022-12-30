@@ -9,11 +9,14 @@ import Promises from '@views/promises'
 import Axios from '@views/axios'
 
 // Views Promises
-import APIBasicPhotos from '@views/promises/api-basic-photos'
-import APIRickAndMorty from '@views/promises/api-rick-and-morty'
+import APIPromisesRickAndMorty from '@views/promises/api-rick-and-morty'
+import APIPromisesPokemons from '@views/promises/api-pokemons'
+import APIPromisesBasicPhotos from '@views/promises/api-basic-photos'
 
-// Views Async Await 
-import APIPokemons from '@views/async-await/api-pokemons'
+// Views Async Await
+import APIAsyncAwaitRickAndMorty from '@views/async-await/api-rick-and-morty'
+import APIAsyncAwaitPokemons from '@views/async-await/api-pokemons'
+import APIAsyncAwaitBasicPhotos from '@views/async-await/api-basic-photos'
 
 // Views Axios
 
@@ -26,10 +29,13 @@ const routes = () => {
         <Route path='/promises' element={<Promises />} />
         <Route path='/axios' element={<Axios />} />
 
-        <Route path='/promises/api-basic-photos' element={<APIBasicPhotos />} />
-        <Route path='/promises/api-rick-and-morty' element={<APIRickAndMorty />} />
+        <Route path='/promises/api-rick-and-morty' element={<APIPromisesRickAndMorty />} />
+        <Route path='/promises/api-pokemons' element={<APIPromisesPokemons />} />
+        <Route path='/promises/api-basic-photos' element={<APIPromisesBasicPhotos />} />
 
-        <Route path='/async-await/api-pokemons' element={<APIPokemons />} />
+        <Route path='/async-await/api-rick-and-morty' element={<APIAsyncAwaitRickAndMorty />} />
+        <Route path='/async-await/api-pokemons' element={<APIAsyncAwaitPokemons />} />
+        <Route path='/async-await/api-basic-photos' element={<APIAsyncAwaitBasicPhotos />} />
       </Routes>
     </>
   )

@@ -16,7 +16,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div marginY='1rem'>
-          <H5 textCenter colorGray100 marginY='.3rem'> BASIC PHOTOS </H5>
+          <H5 textCenter colorGray100 marginY='.3rem'> POKEMONS </H5>
           <P textCenter colorGray200 marginY='.3rem'> Promises </P>
         </Div>
 
@@ -26,7 +26,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div displayGrid jcCenter marginT='1.5rem'>
-          <Link to='/promises/api-basic-photos'>
+          <Link to='/promises/api-pokemons'>
             <Button button5 bgColorWhite colorGray600> Ver </Button>
           </Link>
         </Div>

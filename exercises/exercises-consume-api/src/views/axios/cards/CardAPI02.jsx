@@ -16,7 +16,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div marginY='1rem'>
-          <H5 textCenter colorGray100 marginY='.3rem'> RICK AND MORTY </H5>
+          <H5 textCenter colorGray100 marginY='.3rem'> BASIC PHOTOS </H5>
           <P textCenter colorGray200 marginY='.3rem'> Axios </P>
         </Div>
 
