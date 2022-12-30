@@ -26,7 +26,7 @@ const routes = () => {
         <Route path='/promises' element={<Promises />} />
         <Route path='/axios' element={<Axios />} />
 
-        <Route path='/promises/api-basic-photos' />
+        <Route path='/promises/api-basic-photos' element={<APIBasicPhotos />} />
         <Route path='/promises/api-rick-and-morty' element={<APIRickAndMorty />} />
 
         <Route path='/async-await/api-pokemons' element={<APIPokemons />} />

@@ -4,6 +4,7 @@ import { Section, Div, H4 } from 'nc-styles-react'
 
 // Cards
 import CardAPI01 from './cards/CardAPI01'
+import CardAPI02 from './cards/CardAPI02'
 
 const Index = () => {
   return (
@@ -13,8 +14,9 @@ const Index = () => {
           <H4 textAling='center' colorBlue600> EXERCISES PROMISES API </H4>
         </Div>
 
-        <Div display='grid' gridTemplateColumns='repeat(1, minmax(0, 1fr))' gap='1rem' justifyContent='center'>
+        <Div display='grid' gtCol4 gap='1rem' justifyContent='center'>
           <CardAPI01 />
+          <CardAPI02 />
         </Div>
       </Section>
     </>
