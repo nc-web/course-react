@@ -14,8 +14,8 @@ const Menu = () => {
                     <Div displayFlex jcSpaceBetween aiCenter>
                         <Ul><Link to='/'><P colorWhite>HOME</P></Link></Ul>
                         <Ul><Link to='/promises'><P colorWhite>PROMISES</P></Link></Ul>
-                        <Ul><Link to='/api-pokemons'><P colorWhite>ASYNC AWAIT</P></Link></Ul>
-                        <Ul><Link to='/api-rick-and-morty'><P colorWhite>AXIOS</P></Link></Ul>
+                        <Ul><Link TO='/async-await' ><P>ASYNC AWAIT</P></Link></Ul>
+                        <Ul><Link to='/axios' ><P>AXIOS</P></Link></Ul>
                     </Div>
                 </Div>
             </Nav>
