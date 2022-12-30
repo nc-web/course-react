@@ -17,7 +17,7 @@ const CardAPI01 = () => {
 
         <Div marginY='1rem'>
           <H5 textCenter colorGray100 marginY='.3rem'> POKEMONS </H5>
-          <P textCenter colorGray200 marginY='.3rem'> Promises </P>
+          <P textCenter colorGray200 marginY='.3rem'> Async Await </P>
         </Div>
 
         <Div>
@@ -27,7 +27,7 @@ const CardAPI01 = () => {
 
         <Div displayGrid jcCenter marginT='1.5rem'>
           <Link to='/async-await/api-pokemons'>
-            <Button button5 bgColorWhite colorGray600> Ver </Button>
+            <Button button5 bgColorTeal700 colorWhite> Ver </Button>
           </Link>
         </Div>
       </Article>
