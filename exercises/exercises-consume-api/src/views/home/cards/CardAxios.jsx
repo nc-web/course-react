@@ -26,7 +26,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div displayGrid jcCenter marginT='1.5rem'>
-          <Link to='/async-await/api-basic-photos'>
+          <Link to='/axios'>
             <Button button5 bgColorDeepPurple600 colorWhite> Ver </Button>
           </Link>
         </Div>

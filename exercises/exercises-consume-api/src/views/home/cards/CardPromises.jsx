@@ -26,7 +26,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div displayGrid jcCenter marginT='1.5rem'>
-          <Link to='/async-await/api-rick-and-morty'>
+          <Link to='/promises'>
             <Button button5 bgColorYellow700 colorWhite> Ver </Button>
           </Link>
         </Div>

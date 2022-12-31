@@ -13,13 +13,18 @@ const APIRickAndMorty = () => {
 
   return (
     <>
-      <Div displayGrid jcCenter>
-        <Div className='Characters' displayGrid jcCenter gtcAutoFit18>
+      <Div padding='1rem'>
+        <Div className='Characters'
+          displayGrid
+          gridTemplateColumnsAutoFill15
+          gap='2rem'
+          padding='1rem'
+          >
           {
           characters.map(x => (
-            <Div key={x.id}>
-              <Img src={x.image} alt='' style={{ width: '150px' }} />
-              <P>{x.name}</P>
+            <Div key={x.id} marginAuto padding='.8rem' borderRadius='.5rem' boxShadowBR1 background='linear-gradient(135deg, #BDBDBD, 30%, #757575)'>
+              <Img src={x.image} alt='' width='12rem' borderRadius='.5rem' marginB='.5rem'/>
+              <P textCenter colorWhite>{x.name}</P>
             </Div>
           ))
           }

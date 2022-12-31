@@ -26,7 +26,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div displayGrid jcCenter marginT='1.5rem'>
-          <Link to='/async-await/api-pokemons'>
+          <Link to='/async-await'>
             <Button button5 bgColorTeal700 colorWhite> Ver </Button>
           </Link>
         </Div>
