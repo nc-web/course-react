@@ -3,10 +3,12 @@ import { Div, Figure, Img, Figcaption, H4, P } from 'nc-styles-react'
 
 const Pokemon = ({ avatar, name }) => {
   return (
-    <Figure>
-      <Img src={avatar} alt={name} />
-      <Figcaption> {name} </Figcaption>
-    </Figure>
+    <Div displayGrid gridTemplateColumn15Fill>
+      <Figure>
+        <Img src={avatar} width='12rem' alt={name} />
+        <Figcaption> {name} </Figcaption>
+      </Figure>
+    </Div>
   )
 }
 
