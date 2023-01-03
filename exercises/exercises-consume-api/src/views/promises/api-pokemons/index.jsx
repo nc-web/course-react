@@ -1,12 +1,13 @@
+
 import { useState, useEffect } from 'react'
 import { Div, Figure, Img, Figcaption, H4, P } from 'nc-styles-react'
 
 const Pokemon = ({ avatar, name }) => {
   return (
-    <Div displayGrid gridTemplateColumn15Fill jcCenter>
+    <Div marginAuto padding='.5rem' borderRadius='.5rem' boxShadowBR1 background='linear-gradient(135deg, #BDBDBD, 30%, #757575)'>
       <Figure>
-        <Img src={avatar} width='12rem' alt={name} />
-        <Figcaption> {name} </Figcaption>
+        <Img src={avatar} width='11rem' alt={name} />
+        <Figcaption textCenter colorWhite> {name} </Figcaption>
       </Figure>
     </Div>
   )
@@ -46,19 +47,26 @@ const APIPokemons = () => {
   return (
     <>
       <Div padding="1rem">
-        <Div displayGrid jcCenter>
+        <Div textCenter>
           <H4 textPink500> API Pokemon - Fetch useEffect</H4>
         </Div>
 
-        <Div displayGrid jcCenter aiCenter gtcAutoFit18>
+        <Div
+          displayGrid
+          gridTemplateColumnsAutoFill15
+          jcCenter
+          gap='2rem'
+          padding='1rem'>
           {
-          pokemons.length === 0 ? (
+          pokemons.length === 0
+            ? (
             <P> Cargando ... </P>
-          ) : (
-            pokemons.map((el) => (
-              <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
-            ))
-          )
+              )
+            : (
+                pokemons.map(x => (
+              <Pokemon key={x.id} name={x.name} avatar={x.avatar} />
+                ))
+              )
           }
         </Div>
       </Div>
