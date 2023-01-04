@@ -1,6 +1,6 @@
 
 import { } from 'react'
-import { Header, Div, Footer, H2, H6, A, Button } from 'nc-styles-react'
+import { Header, Div, Footer, H2, H6, A, Button, Small } from 'nc-styles-react'
 
 const ErrorPage = () => {
   return (
@@ -19,6 +19,7 @@ const ErrorPage = () => {
       <Footer bgColorGray600>
         <Div>
           <H6>Newsoft Computer</H6>
+          <Small>info@newsoftcomputer.com</Small>
         </Div>
       </Footer>
     </>
