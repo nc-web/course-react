@@ -1,6 +1,11 @@
 
 import { useState, useEffect } from 'react'
-import { Div, Figure, Img, Figcaption, H4, P } from 'nc-styles-react'
+import { Link } from 'react-router-dom'
+import Icon from '@mdi/react'
+import { Section, Header, Div, Figure, Img, Figcaption, H5, P, Button } from 'nc-styles-react'
+
+// Icons
+import { mdiApi, mdiArrowLeftCircle } from '@mdi/js'
 
 const Pokemon = ({ avatar, name }) => {
   return (
@@ -46,10 +51,27 @@ const APIPokemons = () => {
 
   return (
     <>
-      <Div padding="1rem">
-        <Div textCenter>
-          <H4 textPink500> API Pokemon - Fetch useEffect</H4>
-        </Div>
+      <Section padding="1rem">
+        <Header textCenter colorGray800 marginY='1rem'>
+          <Div>
+            <Div displayGrid justifyContent='center' marginY='.5rem'>
+              <Icon path={mdiApi} size='2.5rem' color='#2196F3' />
+            </Div>
+            <H5>POKEMONS</H5>
+          </Div>
+          <Div marginY='.5rem'>
+            <P colorGray700>Type: REST API</P>
+            <P colorGray700>Web: https://pokeapi.co/</P>
+            <P colorBlue500>URL API: https://pokeapi.co/api/v2/pokemon/</P>
+          </Div>
+          <Div>
+            <Link to='/promises'>
+              <Button button2 hover='background-color: #FBC02D'>
+                <Icon path={mdiArrowLeftCircle} size='2rem' color='#2196F3' />
+              </Button>
+            </Link>
+          </Div>
+        </Header>
 
         <Div
           displayGrid
@@ -69,7 +91,7 @@ const APIPokemons = () => {
               )
           }
         </Div>
-      </Div>
+      </Section>
     </>
   )
 }
