@@ -5,7 +5,7 @@ import { Section, Div, H4 } from 'nc-styles-react'
 // Cards
 import CardAPIRickMorty from './cards/CardAPIRickMorty'
 import CardAPIPokemons from './cards/CardAPIPokemons'
-import CardAPIOpenWeather from './cards/CardAPIOpenWeather'
+import CardAPIYahooWeather from './cards/CardAPIYahooWeather'
 import CardAPILanguageDetect from './cards/CardAPILanguageDetect'
 
 const Index = () => {
@@ -19,7 +19,7 @@ const Index = () => {
         <Div display='grid' gtCol4 gap='1rem' justifyContent='center'>
           <CardAPIRickMorty />
           <CardAPIPokemons />
-          <CardAPIOpenWeather />
+          <CardAPIYahooWeather />
           <CardAPILanguageDetect />
         </Div>
       </Section>

@@ -16,7 +16,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div marginY='1rem'>
-          <H5 textCenter colorGray100 marginY='.3rem'> OPEN WEATHER </H5>
+          <H5 textCenter colorGray100 marginY='.3rem'> YAHOO WEATHER </H5>
           <P textCenter colorGray200 marginY='.3rem'> Promises </P>
         </Div>
 
@@ -26,7 +26,7 @@ const CardAPI01 = () => {
         </Div>
 
         <Div displayGrid jcCenter marginT='1.5rem'>
-          <Link to='/promises/api-open-weather'>
+          <Link to='/promises/api-yahoo-weather'>
             <Button button5 bgColorYellow700 colorWhite> Ver </Button>
           </Link>
         </Div>
