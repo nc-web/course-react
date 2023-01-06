@@ -50,13 +50,15 @@ const APIPokemons = () => {
 
         <Div displayGrid jcCenter aiCenter gtcAutoFit18>
           {
-          pokemons.length === 0 ? (
+          pokemons.length === 0
+            ? (
             <P> Cargando ... </P>
-          ) : (
-            pokemons.map((el) => (
+              )
+            : (
+                pokemons.map((el) => (
               <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
-            ))
-          )
+                ))
+              )
           }
         </Div>
       </Div>

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Icon from '@mdi/react'
-import { Section, Header, Div, Img, H5, P, Button } from 'nc-styles-react'
+import { Section, Header, Article, Div, Img, H5, P, Button } from 'nc-styles-react'
 
 // Icons
 import { mdiApi, mdiArrowLeftCircle } from '@mdi/js'
@@ -40,7 +40,7 @@ const APIRickAndMorty = () => {
             </Link>
           </Div>
         </Header>
-        <Div className='Characters'
+        <Article className='Characters'
           displayGrid
           gridTemplateColumnsAutoFill15
           gap='2rem'
@@ -54,7 +54,7 @@ const APIRickAndMorty = () => {
             </Div>
           ))
           }
-        </Div>
+        </Article>
       </Section>
     </>
   )
