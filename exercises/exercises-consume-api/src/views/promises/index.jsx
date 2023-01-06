@@ -3,9 +3,10 @@ import {} from 'react'
 import { Section, Div, H4 } from 'nc-styles-react'
 
 // Cards
-import CardAPI01 from './cards/CardAPI01'
-import CardAPI02 from './cards/CardAPI02'
-import CardAPI03 from './cards/CardAPI03'
+import CardAPIRickMorty from './cards/CardAPIRickMorty'
+import CardAPIPokemons from './cards/CardAPIPokemons'
+import CardAPIOpenWeather from './cards/CardAPIOpenWeather'
+import CardAPILanguageDetect from './cards/CardAPILanguageDetect'
 
 const Index = () => {
   return (
@@ -16,9 +17,10 @@ const Index = () => {
         </Div>
 
         <Div display='grid' gtCol4 gap='1rem' justifyContent='center'>
-          <CardAPI01 />
-          <CardAPI02 />
-          <CardAPI03 />
+          <CardAPIRickMorty />
+          <CardAPIPokemons />
+          <CardAPIOpenWeather />
+          <CardAPILanguageDetect />
         </Div>
       </Section>
     </>

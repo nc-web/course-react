@@ -11,6 +11,8 @@ import Axios from '@views/axios'
 // Views Promises
 import APIPromisesRickAndMorty from '@views/promises/api-rick-and-morty'
 import APIPromisesPokemons from '@views/promises/api-pokemons'
+import APIPromisesOpenWeather from '@views/promises/api-open-weather'
+import APIPromisesLanguageDetect from '@views/promises/api-language-detect'
 import APIPromisesBasicPhotos from '@views/promises/api-basic-photos'
 
 // Views Async Await
@@ -31,6 +33,8 @@ const routes = () => {
 
         <Route path='/promises/api-rick-and-morty' element={<APIPromisesRickAndMorty />} />
         <Route path='/promises/api-pokemons' element={<APIPromisesPokemons />} />
+        <Route path='/promises/api-open-weather' element={<APIPromisesOpenWeather />} />
+        <Route path='/promises/api-language-detect' element={<APIPromisesLanguageDetect />} />
         <Route path='/promises/api-basic-photos' element={<APIPromisesBasicPhotos />} />
 
         <Route path='/async-await/api-rick-and-morty' element={<APIAsyncAwaitRickAndMorty />} />

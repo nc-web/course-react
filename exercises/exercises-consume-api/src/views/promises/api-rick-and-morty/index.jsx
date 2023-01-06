@@ -14,6 +14,7 @@ const APIRickAndMorty = () => {
     fetch('https://rickandmortyapi.com/api/character/')
       .then(response => response.json())
       .then(data => setCharacters(data.results))
+      .catch(err => console.error(`Error API:  ${err}`))
   }, [])
 
   return (
