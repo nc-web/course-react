@@ -28,6 +28,7 @@ const APIRickAndMorty = () => {
           </Div>
           <Div marginY='.5rem'>
             <P colorGray700>Type: REST API</P>
+            <P colorGray700>Tecnology: Fetch - Promises</P>
             <P colorGray700>Web: https://rickandmortyapi.com/</P>
             <P colorBlue500>URL API: https://rickandmortyapi.com/api/character/</P>
           </Div>

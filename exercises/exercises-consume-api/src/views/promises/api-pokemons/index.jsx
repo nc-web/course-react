@@ -61,6 +61,7 @@ const APIPokemons = () => {
           </Div>
           <Div marginY='.5rem'>
             <P colorGray700>Type: REST API</P>
+            <P colorGray700>Tecnology: Fetch - Promises</P>
             <P colorGray700>Web: https://pokeapi.co/</P>
             <P colorBlue500>URL API: https://pokeapi.co/api/v2/pokemon/</P>
           </Div>
