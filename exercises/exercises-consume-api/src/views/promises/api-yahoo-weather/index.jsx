@@ -8,7 +8,8 @@ import { Section, Header, Article, Div, Img, H5, P, Button } from 'nc-styles-rea
 import { mdiApi, mdiArrowLeftCircle } from '@mdi/js'
 
 const APIOpenWeather = () => {
-  const [stateCity, setStateCity] = useState({})
+  const [stateCity, setStateCity] = useState('Cali')
+  const [stateLocation, setStateLocation] = useState({})
   const [stateAPI, setStateAPI] = useState([])
 
   const encodedParams = new URLSearchParams()
@@ -30,14 +31,14 @@ const APIOpenWeather = () => {
   }, [])
 
   const dataLocation = () => {
-    fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Buga&format=json&u=f', options)
+    fetch(`https://yahoo-weather5.p.rapidapi.com/weather?location=${stateCity}&format=json&u=f`, options)
       // .then(response => console.log(response.json()))
       .then(response => response.json())
-      .then(data => setStateCity(data.location))
+      .then(data => setStateLocation(data.location))
   }
 
   const dataForecasts = () => {
-    fetch('https://yahoo-weather5.p.rapidapi.com/weather?location=Buga&format=json&u=f', options)
+    fetch(`https://yahoo-weather5.p.rapidapi.com/weather?location=${stateCity}&format=json&u=f`, options)
       // .then(response => console.log(response.json()))
       .then(response => response.json())
       .then(data => setStateAPI(data.forecasts))
@@ -69,10 +70,10 @@ const APIOpenWeather = () => {
           </Header>
 
           <Article>
-          <H5>{stateCity.city}</H5>
-            <P>{stateCity.region}</P>
-            <P>{stateCity.country}</P>
-            <P>{stateCity.timezone_id}</P>
+          <H5>{stateLocation.city}</H5>
+            <P>{stateLocation.region}</P>
+            <P>{stateLocation.country}</P>
+            <P>{stateLocation.timezone_id}</P>
             {
               stateAPI.map(x => (
                 <Div key={x.id} displayFlex>
