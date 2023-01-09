@@ -51,12 +51,10 @@ const APIOpenWeather = () => {
     const city = e.target.value
     setStateCity(city)
   }
+
   const handleOnClickCity = (e) => {
-    e.preventDefault()
-    const city = e.target.value
-    setStateCity(city)
-    // dataLocation()
-    // dataForecasts()
+    dataLocation()
+    dataForecasts()
   }
 
   return (
@@ -87,8 +85,8 @@ const APIOpenWeather = () => {
             <Article>
               <Div>
                 <Label>CITY : </Label>
-                <Input onClick={handleOnClickCity} onChange={handleOnChangeCity} value={stateCity} />
-                <Button>Buscar</Button>
+                <Input onChange={handleOnChangeCity} value={stateCity} />
+                <Button onClick={handleOnClickCity}>Buscar</Button>
               </Div>
               <Div>
                 <H5>{stateLocation.city}</H5>
