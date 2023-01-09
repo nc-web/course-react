@@ -60,12 +60,12 @@ const APIOpenWeather = () => {
   return (
         <>
           <Section>
-            <Header textCenter colorGray800 marginY='1rem'>
+            <Header textCenter marginY='1rem'>
               <Div>
                 <Div displayGrid justifyContent='center' marginY='.5rem'>
                   <Icon path={mdiApi} size='2.5rem' color='#2196F3' />
                 </Div>
-                <H5>YAHOO WEATHER</H5>
+                <H5 colorGray800>YAHOO WEATHER</H5>
               </Div>
               <Div marginY='.5rem'>
                 <P colorGray700>Type: REST API</P>
@@ -82,17 +82,17 @@ const APIOpenWeather = () => {
               </Div>
             </Header>
 
-            <Article>
+            <Article displayGrid justifyContent='center' marginY='.5rem'>
               <Div>
-                <Label>CITY : </Label>
-                <Input onChange={handleOnChangeCity} value={stateCity} />
+                <Label colorGray700>CITY : </Label>
+                <Input onChange={handleOnChangeCity} value={stateCity} placeholder='ADD CITY' marginX='.5rem' borderRadius='.3rem'/>
                 <Button onClick={handleOnClickCity}>Buscar</Button>
               </Div>
               <Div>
-                <H5>{stateLocation.city}</H5>
-                <P>{stateLocation.region}</P>
-                <P>{stateLocation.country}</P>
-                <P>{stateLocation.timezone_id}</P>
+                <H5 colorGray700>{stateLocation.city}</H5>
+                <P colorGray700>{stateLocation.region}</P>
+                <P colorGray700>{stateLocation.country}</P>
+                <P colorGray700>{stateLocation.timezone_id}</P>
               </Div>
               {
                 stateAPI.map(x => (
