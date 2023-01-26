@@ -3,7 +3,7 @@ import {} from 'react'
 import Icon from '@mdi/react'
 
 // Styles
-import styles from './css/card-call-01.module.css'
+import styles from './css/card-call-01.css'
 
 // Icons
 import { mdiPhone, mdiEmail, mdiPhoneHangup } from '@mdi/js'

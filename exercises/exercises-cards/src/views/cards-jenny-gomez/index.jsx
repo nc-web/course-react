@@ -4,8 +4,9 @@ import { Section, Div, H4 } from 'nc-styles-js'
 
 // Cards Styled Components
 import CardCall01CSS from './cards-css/CardCall01'
-import CardCall01SC from './cards-styled-components/CardCall01'
 import CardCall01CSSModule from './cards-css-module/CardCall01'
+import CardCall01SC from './cards-styled-components/CardCall01'
+
 
 const index = () => {
   return (

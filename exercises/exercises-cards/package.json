@@ -16,6 +16,7 @@
     "@mdi/js": "^7.0.96",
     "@mdi/react": "^1.6.1",
     "nc-styles-js": "^0.5.4",
+    "nc-styles-react": "^0.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3"

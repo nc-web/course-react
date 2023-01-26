@@ -43,7 +43,7 @@ const Calculator = () => {
 
   return (
     <>
-      <Div bgColorGray200 padding='1.5rem' borderRadius='0.5rem' boxShadowBR2>
+      <Div bgColorGray200 padding='1.5rem' borderRadius='0.5rem' boxShadow=''>
         <Div bgColorGray100 paddingX='1rem' paddingY='0.5rem'>
           <Div textRight marginY='0.5rem'>
             <H1 ref={refDisplay1} colorGray800>{stateDisplay1}</H1>
