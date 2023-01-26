@@ -1,20 +1,10 @@
 
 import { } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
+import { Nav, Ul, Main, Footer, Div, H6, P, Small } from 'nc-styles-react'
 
 // Global Styles
 import '@assets/css/global.css'
-
-// Components Base
-import Nav from '@components/nav'
-import Ul from '@components/ul'
-import Li from '@components/li'
-import Main from '@components/main'
-import Footer from '@components/footer'
-import Div from '@components/div'
-import H6 from '@components/h6'
-import P from '@components/p'
-import Small from '@components/small'
 
 // Views
 import Calculator01 from '@views/calculator-01/'
@@ -23,7 +13,7 @@ import Calculator02 from '@views/calculator-02/'
 function App () {
   return (
     <>
-      <Nav displayFlex jcSpaceBetween aiCenter padding='1rem' bgTeal500 boxShadowBR2>
+      <Nav displayFlex jcSpaceBetween aiCenter padding='1rem' bgColorTeal500 boxShadowBR2>
         <Div>
           <H6 colorWhite> BASIC CALCULATOR </H6>
         </Div>

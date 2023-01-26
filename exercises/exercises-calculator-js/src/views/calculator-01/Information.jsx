@@ -1,11 +1,6 @@
 
 import { } from 'react'
-
-// Components Base
-import Article from '@components/article'
-import Div from '@components/div'
-import H6 from '@components/h6'
-import P from '@components/p'
+import { Article, Div, H6, P } from 'nc-styles-react'
 
 const Credits = () => {
   return (

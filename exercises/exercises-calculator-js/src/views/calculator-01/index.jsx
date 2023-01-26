@@ -1,8 +1,6 @@
 
 import {} from 'react'
-
-// Components Base
-import Div from '@components/div'
+import { Div } from 'nc-styles-react'
 
 // Components Advanced
 import Calculator from './Calculator01'

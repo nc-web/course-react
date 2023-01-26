@@ -1,12 +1,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Icon from '@mdi/react'
-
-// Components Base
-import Div from '@components/div'
-import H1 from '@components/h1'
-import P from '@components/p'
-import Button from '@components/button'
+import { Div, H1, P, Button } from 'nc-styles-react'
 
 // Icons
 import { mdiBackspaceOutline } from '@mdi/js'
@@ -49,12 +44,12 @@ const Calculator = () => {
   return (
     <>
       <Div bgColorGray200 padding='1.5rem' borderRadius='0.5rem' boxShadowBR2>
-        <Div bgGray100 paddingX='1rem' paddingY='0.5rem'>
+        <Div bgColorGray100 paddingX='1rem' paddingY='0.5rem'>
           <Div textRight marginY='0.5rem'>
             <H1 ref={refDisplay1} colorGray800>{stateDisplay1}</H1>
           </Div>
           <Div textRight marginY='0.5rem'>
-            <P fontSize='18px' textGray700>{stateDisplay2}</P>
+            <P fontSize='18px' colorGray700>{stateDisplay2}</P>
           </Div>
         </Div>
 
@@ -86,7 +81,7 @@ const Calculator = () => {
               <Icon path={mdiBackspaceOutline} size={0.7} color='#757575' />
             </Div>
           </Button>
-          <Button onClick={handleCalculate} bgOrange500>=</Button>
+          <Button onClick={handleCalculate} bgColorOrange500>=</Button>
         </Div>
       </Div>
     </>
