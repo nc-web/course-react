@@ -8,6 +8,7 @@ import Foto from '/img/foto.webp'
 
 // Icons
 import { mdiFacebook, mdiTwitter, mdiWeb } from '@mdi/js'
+
 const CardsFooter01 = () => {
   return (
     <>
