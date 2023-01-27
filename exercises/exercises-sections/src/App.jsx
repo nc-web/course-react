@@ -1,13 +1,16 @@
 
 import {} from 'react'
+import { Div } from 'nc-styles-react'
 
-// Cards
-import CardJenny from '@views/sections-header/index'
+// Section
+import Section from './views/sections-header/SectionMobile'
 
 const App = () => {
   return (
     <>
-      <CardJenny />
+    <Div displayGrid margin='1rem'>
+      <Section/>
+    </Div>
     </>
   )
 }
