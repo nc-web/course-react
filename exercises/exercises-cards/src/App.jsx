@@ -1,19 +1,19 @@
 
 import { } from 'react'
+import { Div } from 'nc-styles-react'
 
-// Routes
-import Routes from '@router/routes'
-
-// Nav
-import Menu from '@views/nav'
+// Styles
+import './assets/css/global.css'
 
 // Components
-import CardsFooter from './views/cards-jenny-gomez/cards/cards-footer-01/CardsFooter-01'
+import CardFloat from './views/cards-jenny-gomez/cards/cards-float/CardFloat'
 
 function App () {
   return (
     <>
-      <CardsFooter/>
+    <Div displayGrid jcCenter marginT='8rem'>
+      <CardFloat/>
+    </Div>
     </>
   )
 }
