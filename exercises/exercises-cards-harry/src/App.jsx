@@ -1,14 +1,19 @@
 
+import { } from 'nc-styles-react'
 import { } from 'react'
 
-// Components
+// Styles
+import './assets/css/global.css'
 
-import CardsFooter01 from './views/cards/cards-footer-01/CardFooter-01'
+// Components
+// import CardsFooter01 from './views/cards/cards-footer-01/CardFooter-01'
+import CardFloat from './views/cards/card-float/CardFloat-01'
 
 function App () {
   return (
       <>
-        <CardsFooter01 />
+        {/* <CardsFooter01 /> */}
+        <CardFloat />
       </>
   )
 }
