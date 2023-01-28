@@ -12,7 +12,7 @@ import { mdiStar, mdiVideoOutline, mdiMessageMinusOutline, mdiPhone } from '@mdi
 const Card01 = () => {
   return (
         <>
-        <Article width='18rem' padding='1rem' borderRadius='1rem' backgroundColor='#f4f5f4'>
+        <Article width='18rem' padding='1rem' borderRadius='1rem' backgroundColor='#f4f5f4' boxShadow='.1rem .1rem .5rem .3rem rgba(104, 104, 104, 0.5)'>
               <Div displayGrid jcCenter borderRadius='50%' padding='.625rem' backgroundColor='#f2f4f1' boxShadow='.1rem .1rem .1rem rgba(117, 117, 117, 0.5)'>
                 <Img src={foto} width='14.5rem' ></Img>
               </Div>
