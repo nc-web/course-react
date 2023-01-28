@@ -3,7 +3,7 @@ import {} from 'react'
 import { Div } from 'nc-styles-react'
 
 // Section
-import Section from './views/sections-header/SectionMobile'
+import Section from './views/sections-header/index'
 
 const App = () => {
   return (

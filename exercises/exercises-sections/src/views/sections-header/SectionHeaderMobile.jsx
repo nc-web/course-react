@@ -14,17 +14,19 @@ const SectionMobile = () => {
                     <P fontSize='1rem' textCenter colorGray700 marginTop='.5rem'> Lorem Ipsum passages, and more recently with desktop publishing </P>
                 </Div>
 
-                <Div displayGrid gridTemplateColumns='100%' jcCenter bgColorRed200>
-                    <Div>
-                        <Card01/>
-                    </Div>
+                <Div displayGrid jcCenter>
+                    <Div displayGrid gridTemplateColumns='100%' justifyContent='center' alignContent='center'>
+                        <Div>
+                            <Card01/>
+                        </Div>
 
-                    <Div>
-                         <Card01/>
-                    </Div>
+                        <Div>
+                            <Card01/>
+                        </Div>
 
-                    <Div>
-                        <Card01/>
+                        <Div>
+                            <Card01/>
+                        </Div>
                     </Div>
                 </Div>
             </Section>
