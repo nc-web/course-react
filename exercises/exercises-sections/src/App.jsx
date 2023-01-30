@@ -8,9 +8,7 @@ import Section from './views/section-gradient/index'
 const App = () => {
   return (
     <>
-    <Div displayGrid>
       <Section/>
-    </Div>
     </>
   )
 }
