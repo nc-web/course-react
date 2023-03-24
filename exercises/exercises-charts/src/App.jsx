@@ -1,15 +1,14 @@
 
-import { useState } from 'react'
+import {  } from 'react'
 
 // Components
-import LineChart01 from './react-chartjs-2/course-nc/line-charts/line-chart-01/LineChart01'
+import GettingStarted from './recharts/course-nc/line-chart/getting-started/GettingStarted'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <LineChart01 />
+      <GettingStarted />
     </>
   )
 }
