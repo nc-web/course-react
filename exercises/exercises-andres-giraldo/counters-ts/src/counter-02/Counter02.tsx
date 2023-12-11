@@ -7,7 +7,7 @@ export default function Counter02() {
 
     return(
         <>
-            <h2>Counter 03</h2>
+            <h2>Counter 02</h2>
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                 count is {count}
