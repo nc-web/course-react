@@ -8,5 +8,6 @@ export default function DefaultProps(props) {
 }
 
 DefaultProps.defaultProps = {
-    color: 'Wite'
+    color: 'Wite',
+    backgroundColor: 'Black'
 }
