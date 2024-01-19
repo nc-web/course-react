@@ -1,7 +1,7 @@
 
 import DefaultProps from "./default-props/DefaultProps"
 import Props from "./props/Props"
-import Father from './father-children-grandson/01Father'
+import Father from './pass-props/pass-props-to-much-components/01Father'
 
 function App() {
 
