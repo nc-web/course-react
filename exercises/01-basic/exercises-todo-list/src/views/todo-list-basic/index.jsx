@@ -3,7 +3,7 @@ import {} from 'react'
 import { Section, Div, H4 } from 'nc-styles-react'
 
 // Todo List
-import TodoList01 from './TodoList01'
+import TodoListBasic from './TodoListBasic'
 
 const TodoListDesktop01 = () => {
   return (
@@ -14,7 +14,7 @@ const TodoListDesktop01 = () => {
         </Div>
 
         <Div display='grid' gridTemplateColumns='repeat(1, minmax(0, 1fr))' gap='1rem' justifyContent='center'>
-          <TodoList01 />
+          <TodoListBasic />
         </Div>
       </Section>
     </>

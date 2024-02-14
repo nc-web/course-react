@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 // Views
 import Home from '@views/home'
 import AboutAs from '@views/about'
-import TodoList01 from '@views/todo-list-01'
+import TodoList01 from '@views/todo-list-basic'
 
 const routes = () => {
   return (

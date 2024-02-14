@@ -6,7 +6,7 @@ import { Article, Div, Ul, Li, H4, P, Input, Button } from 'nc-styles-react'
 // Icons
 import { mdiDeleteForever } from '@mdi/js'
 
-const TodoList01 = () => {
+export default function TodoListBasic () {
   const [newItem, setNewItem] = useState('')
   const [items, setItems] = useState([])
   const [statusItem, setStatusItem] = useState(false)
@@ -73,5 +73,3 @@ const TodoList01 = () => {
     </>
   )
 }
-
-export default TodoList01
