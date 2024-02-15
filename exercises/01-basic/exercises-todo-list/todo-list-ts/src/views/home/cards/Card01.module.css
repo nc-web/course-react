@@ -1,0 +1,37 @@
+
+.card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 2rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(255, 255, 255, .1);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        box-shadow: .2rem .2rem .2rem .2rem rgba(255, 255, 255, .1);
+        transform: scale(1.1);
+    }
+}
+
+.card__header {
+    text-align: center;
+}
+
+.card__body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__body_cont {
+    text-align: center;
+}
+
+.card__body_cont_svg {
+    width: 5rem;
+    fill: #FFAB00;
+    text-align: center;
+}

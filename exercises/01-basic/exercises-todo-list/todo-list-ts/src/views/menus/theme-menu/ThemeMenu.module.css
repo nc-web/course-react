@@ -1,35 +1,22 @@
 
+
 /* MENU */
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: .5rem 2rem;
 }
 
 
-/* MENU COMPANY */
-.menu__company {
+/* MENU THEME */
+.menu__theme {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu__company_svg {
-    fill: #FFAB00;
-    width: 2rem;
-    margin: .2rem .5rem;  
-}
-
-
-/* MENU NAV */
-.menu__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu__nav_items {
+.menu__theme_items {
     display: grid;
     margin: 0 .5rem;
     padding: .5rem 1rem;
@@ -46,16 +33,17 @@
         margin: 0 .8rem;
     }
 
-    &:hover .menu__nav_items_svg {
+    &:hover .menu__theme_items_svg {
         
-        fill: #FFC400
+        fill: #00B0FF;
     }
 }
 
-.menu__nav_items_svg {
-    fill: #FFAB00;
-    width: 2rem;
-    margin: .2rem 0;  
+.menu__theme_items_svg {
+    fill: #0091EA;
+    width: 1.5rem;
+    margin: .2rem 0;
+    
 }
 
 
