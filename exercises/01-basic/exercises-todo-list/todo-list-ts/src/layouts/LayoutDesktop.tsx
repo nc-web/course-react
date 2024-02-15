@@ -6,13 +6,16 @@ export default function LayoutDesktop({ children }:{ children: React.ReactNode})
     return(
         <>
             <div>
-                <h2>Layout Desktop</h2>
+                <DesktopMenu/>
             </div>
 
             <main>
-                <DesktopMenu/>
                 {children}
             </main>
+
+            <footer>
+                <small>Newsoft Computer</small>
+            </footer>
             
         </>
     )

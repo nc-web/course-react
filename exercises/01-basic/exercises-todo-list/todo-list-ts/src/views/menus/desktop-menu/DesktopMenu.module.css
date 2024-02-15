@@ -1,13 +1,14 @@
 
+/* MENU */
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: .5rem 2rem;
 }
 
 
-/* Menu Company*/
-
+/* MENU COMPANY */
 .menu__company {
     display: flex;
     justify-content: center;
@@ -15,9 +16,46 @@
 }
 
 
-/* Menu Nav*/
-
+/* MENU NAV */
 .menu__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__nav_items {
+    display: grid;
+    margin: 0 .5rem;
+    padding: .5rem 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+        box-shadow: .2rem .2rem .2rem .2rem rgba(255, 255, 255, .1);
+        transform: scale(1.2rem);
+        margin: 0 .8rem;
+    }
+
+    &:hover .menu__nav_items_svg {
+        
+        fill: #FFC400
+    }
+}
+
+.menu__nav_items_svg {
+    fill: #FFAB00;
+    width: 2rem;
+    margin: .2rem 0;
+    
+}
+
+
+/* MENU THEME */
+.menu__theme {
     display: flex;
     justify-content: center;
     align-items: center;
