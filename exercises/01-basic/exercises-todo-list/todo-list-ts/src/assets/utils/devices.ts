@@ -6,16 +6,7 @@ interface IDevices {
 
 type TypeDevices = IDevices
 
-const InitDevices: TypeDevices = {
+export const InitDevices: TypeDevices = {
     deviceMobile: 420,
     deviceDesktop: 1040
-}
-
-export default function index() {
-
-    const devices: InitDe
-
-    devices.deviceMobile
-    
-
 }
