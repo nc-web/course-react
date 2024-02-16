@@ -44,7 +44,7 @@ export default function TodoList01() {
         id: 1,
         taks: newItem,
         status: false
-        }
+        }, ... items
       ]
     )
 

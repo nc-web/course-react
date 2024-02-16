@@ -3,7 +3,7 @@
 import styles from './HomeDesktop.module.css'
 
 // Layout
-import LayoutDesktop from "../../layouts/LayoutDesktop"
+import LayoutDesktop from "../../layouts/LayoutMainDesktop"
 
 // Cards
 import Card01 from './cards/Card01'
