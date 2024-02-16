@@ -1,15 +1,13 @@
 
-// Home
-import HomeDesktop from "./views/home/HomeDesktop"
-
-// import Layout from "./layouts/Layout";
+// Routes
+import Routes from "./router/routes" 
 
 
 function App() {
 
   return (
     <>
-      <HomeDesktop></HomeDesktop>
+      <Routes></Routes>
     </>
   )
 }

@@ -1,0 +1,19 @@
+
+.tl1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #64B5F6;
+}
+
+
+.tl1__tasks_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+}
