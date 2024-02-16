@@ -5,7 +5,6 @@ import LayoutTodoMobile from "./LayoutTodoMobile"
 import LayoutTodoDesktop from "./LayoutTodoDesktop"
 
 
-
 const LayoutTodo = () => {
 
     if (window.innerWidth <= 425) {

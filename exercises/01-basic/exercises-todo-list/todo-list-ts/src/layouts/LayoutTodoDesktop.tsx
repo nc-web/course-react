@@ -1,8 +1,8 @@
 
+import DesktopBackMenu from "../views/menus/back-menu/DesktopBackMenu"
 
-import DesktopBackMenu from "views/menus/back-menu/DesktopBackMenu" from '../../src/views/menus/back-menu/DesktopBackMenu'
 
-export default function LayoutTodoDesktop({children}:{childre: React.ReactNode}) {
+export default function LayoutTodoDesktop({children}:{children: React.ReactNode}) {
     
     return(
         <>
@@ -11,7 +11,6 @@ export default function LayoutTodoDesktop({children}:{childre: React.ReactNode})
             </div>
 
             <section>
-                <h2>Layout Todo Desktop</h2>
                 {children}
             </section>
 

@@ -54,7 +54,7 @@
 
 .menu__nav_items_svg {
     fill: #FFAB00;
-    width: 2rem;
+    width: 1.5rem;
     margin: .2rem 0;  
 }
 
@@ -64,4 +64,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* LINK */
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
 }
