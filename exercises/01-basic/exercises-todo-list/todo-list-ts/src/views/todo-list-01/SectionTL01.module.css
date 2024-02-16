@@ -1,0 +1,22 @@
+
+.section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section__header {
+    display: grid;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+
+.section__body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+}

@@ -3,9 +3,9 @@
 import { Link } from 'react-router-dom'
 
 // Styles
-import styles from './DesktopMainMenu.module.css'
+import styles from './DesktopBackMenu.module.css'
 
-export default function DesktopMainMenu() {
+export default function DesktopBackMenu() {
 
     return(
         <div className={styles.menu}>

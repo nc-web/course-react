@@ -1,6 +1,6 @@
 
 // Menus
-import DesktopMenu from "../views/menus/desktop-menu/DesktopMenu"
+import DesktopMainMenu from "../views/menus/main-menu/DesktopMainMenu"
 import ThemeMenu from '../views/menus/theme-menu/ThemeMenu'
 
 export default function LayoutMainDesktop({ children }:{ children: React.ReactNode}) {
@@ -8,7 +8,7 @@ export default function LayoutMainDesktop({ children }:{ children: React.ReactNo
         <>
             <div>
                 <ThemeMenu/>
-                <DesktopMenu/>
+                <DesktopMainMenu/>
             </div>
 
             <main>
