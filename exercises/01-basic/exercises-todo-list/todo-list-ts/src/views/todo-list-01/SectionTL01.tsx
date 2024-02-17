@@ -28,6 +28,5 @@ export default function SectionTL01 () {
 
       </section>
     </LayoutTodoDesktop>
-    
   )
 }
