@@ -31,8 +31,9 @@ export default function TodoList01() {
     console.log(items)
   }, [items, statusItem])
 
+
   const handleAddItem = (e: Event) => {
-    e.preventDefault()
+    // e.preventDefault()
     
     const input = e.target as HTMLInputElement
     setNewItem(input.value)
@@ -48,8 +49,6 @@ export default function TodoList01() {
       ]
     )
 
-    
-    
     console.log(items)
 
     //setItems(arrayTemp:  => [...arrayTemp, item])

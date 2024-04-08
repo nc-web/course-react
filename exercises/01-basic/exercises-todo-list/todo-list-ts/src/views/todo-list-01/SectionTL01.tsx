@@ -14,6 +14,10 @@ export default function SectionTL01 () {
     <LayoutTodoDesktop>
       <section className={styles.section} >
 
+        <div className={styles.section__body} >
+          <TodoList01/>
+        </div>
+
         <div className={styles.section__header} >
           <h2 className={styles.section__header_title} > EXERCISE TODO LIST 01 </h2>
           <div>
@@ -24,10 +28,6 @@ export default function SectionTL01 () {
             <h4 className={styles.section__header_tdetails}>Detalles tecnicos: </h4>
             <small>Todo List con opciones Agregar, Editar, Eliminar y Completar. Almacenados en un useState Array. Estilos con CSS nativo</small>  
           </div>
-        </div>
-
-        <div className={styles.section__body} >
-          <TodoList01/>
         </div>
 
       </section>
