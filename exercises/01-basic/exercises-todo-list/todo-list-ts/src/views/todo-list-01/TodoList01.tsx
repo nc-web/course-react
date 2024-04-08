@@ -32,7 +32,15 @@ export default function TodoList01() {
   }, [items, statusItem])
 
 
-  const handleAddItem = (e: Event) => {
+  const handleOnChangeInputTask = (e: Event) => {
+    
+    const inputTask = e.target as HTMLInputElement
+    setNewItem(inputTask.value)
+
+  }
+
+
+  const addItem = (e: Event) => {
     // e.preventDefault()
     
     const input = e.target as HTMLInputElement
@@ -55,7 +63,7 @@ export default function TodoList01() {
     //setNewItem('')
   }
 
-   const handleDeleteItem = (id: number) => {
+   const removeItem = (id: number) => {
 
   //   let x: number;
   //   const newArray: number[] = items.filter(x => x !== id)
@@ -85,9 +93,10 @@ export default function TodoList01() {
         </div>
         
         <div className={styles.tl1__form}>
-          <input className={styles.tl1__form_input} type='text' onChange={e => setNewItem(e.target.value)} value={newItem}/>
+          <input className={styles.tl1__form_input} type='text' onChange={(e: Event) => handleOnChangeInputTask(e)} value={newItem}/>
+          {/* <input className={styles.tl1__form_input} type='text' onChange={e => setNewItem(e.target.value)} value={newItem}/> */}
           <div className={styles.tl1__form_input_contb}>
-            <button className={styles.tl1__form_button} onClick={handleAddItem}>
+            <button className={styles.tl1__form_button} onClick={(e: Event) => addItem(e)}>
               <svg className={styles.tl1__form_svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle</title><path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
               Agregar
             </button>
