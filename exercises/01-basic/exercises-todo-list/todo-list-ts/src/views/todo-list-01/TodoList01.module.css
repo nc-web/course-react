@@ -55,14 +55,24 @@
     align-items: center;
     margin: .5rem 0;
 }
-.tl1__tasks_items_svg_point{
+
+.tl1__tasks_items_svg_point_true{
     width: 1.2rem;
-    /* fill: #D500F9; */
+    fill: #64DD17;
+    margin-right: .3rem;
+}
+.tl1__tasks_items_svg_point_false{
+    width: 1.2rem;
     fill: #FFFFFF;
     margin-right: .3rem;
 }
+
 .tl1__tasks_items_cont_svg {
     margin-left: 3rem;
+}
+
+.tl1__tasks_items_a_svg_delete {
+    cursor: pointer;
 }
 .tl1__tasks_items_svg_delete {
     width: 1.5rem;
@@ -72,6 +82,10 @@
     width: 1.4rem;
     fill: #FFD600;
     margin: 0 .3rem;
+}
+
+.tl1__tasks_items_a_svg_check {
+    cursor: pointer;
 }
 .tl1__tasks_items_svg_check {
     width: 1.5rem;
