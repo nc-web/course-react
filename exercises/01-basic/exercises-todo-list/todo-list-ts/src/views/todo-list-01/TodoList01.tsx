@@ -18,7 +18,7 @@ export default function TodoList01() {
   
   const [stateNewItem, setStateNewItem] = useState('')
   const [stateItems, setStateItems] = useState<TypeTodoList>([])
-  const [stateStatusItem, setStateStatusItem] = useState(false)
+  const [stateStatusItem, setStateStatusItem] = useState(Boolean)
 
   useEffect(() => {
     console.log(stateItems)
@@ -39,11 +39,12 @@ export default function TodoList01() {
 
     setStateItems(
       [
+        ... stateItems,
         {
         id: Math.floor(Math.random() * 1000),
         taks: stateNewItem,
         status: false
-        }, ... stateItems
+        }
       ]
     )
 
@@ -52,38 +53,40 @@ export default function TodoList01() {
     inputTask.value = ''
   }
 
-  const removeItem = (e: Event, id: number) => {
+  const removeItem = (id: number) => {
 
-    e.preventDefault()
-    // let x: number;
-    // const newArray: number[] = [...stateItems.filter(x => x.id !== id)]
     setStateItems([...stateItems.filter(x => x.id !== id)])
+
   }
 
 
-  const checkItem = (e: Event, id: number) => {
+  const checkItem = (id: number) => {
     
-    e.preventDefault()
-    const inputTask = e.target as HTMLInputElement
+    // e.preventDefault()
+    // const inputTask = e.target as HTMLInputElement
     
-    const taskFound = stateItems.find(x => x.id === id)
+    // const taskFound = stateItems.find(x => x.id === id)
+    // console.log(taskFound)
 
-    if (taskFound) {
-      if (taskFound?.status === false) {
-        taskFound.status = true
-        setStateStatusItem(true)
-      } else {
-        taskFound.status = false
-        setStateStatusItem(false)
-      }
-    }
-    
-    // stateItems.map(x => {
-    //   if (x.id === id) {
-    //     x.status = true
-    //     setStateStatusItem(true)
+    // if (taskFound) {
+    //   if (taskFound?.status === false) {
+    //     taskFound.status = true
+    //   } else {
+    //     taskFound.status = false
     //   }
-    // })
+    // }
+
+    stateItems.map(x => {
+      if (x.id === id) {
+        if (x.status === false) {
+              x.status = true
+              setStateStatusItem(true)
+            } else {
+              x.status = false
+              setStateStatusItem(false)
+            }             
+      }
+    })
 
   }
 
@@ -124,13 +127,13 @@ export default function TodoList01() {
                     
                     <p>{x.id} - {x.taks} - {x.status}</p>
                     <div className={styles.tl1__tasks_items_cont_svg}>
-                      <a className={styles.tl1__tasks_items_a_svg_delete} onClick={(e: Event) => removeItem(e, x.id)}>
+                      <a className={styles.tl1__tasks_items_a_svg_delete} onClick={() => removeItem(x.id)}>
                         <svg className={styles.tl1__tasks_items_svg_delete} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
                       </a>
                       {/* <a href="">
                         <svg className={styles.tl1__tasks_items_svg_edit} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                       </a> */}
-                      <a className={styles.tl1__tasks_items_a_svg_check} onClick={(e: Event) => checkItem(e, x.id)}>
+                      <a className={styles.tl1__tasks_items_a_svg_check} onClick={() => checkItem(x.id)}>
                         <svg className={styles.tl1__tasks_items_svg_check} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>check-decagram</title><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" /></svg>
                       </a>
                     </div>
