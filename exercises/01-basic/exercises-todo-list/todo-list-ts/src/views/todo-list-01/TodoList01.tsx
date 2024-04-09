@@ -95,7 +95,7 @@ export default function TodoList01() {
       <article className={styles.tl1}>
         
         <div className={styles.tl1__header}>
-          <h4>TODO LIST BASIC</h4>
+          <h4>TODO LIST 01</h4>
         </div>
         
         <div className={styles.tl1__form}>

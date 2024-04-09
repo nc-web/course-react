@@ -7,6 +7,7 @@ import LayoutDesktop from "../../layouts/LayoutMainDesktop"
 
 // Cards
 import Card01 from './cards/Card01'
+import Card02 from './cards/Card02'
 
 export default function HomeDesktop() {
 
@@ -19,7 +20,7 @@ export default function HomeDesktop() {
 
                 <div className={styles.cads}>
                     <Card01/>
-                    <Card01/>
+                    <Card02/>
                 </div>
             </section>
             

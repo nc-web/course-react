@@ -1,8 +1,8 @@
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 // Styles
-import styles from './TodoList01.module.css'
+import styles from './TodoList02.module.css'
 
 
 interface ITodoList {
@@ -15,6 +15,8 @@ type TypeTodoList = ITodoList[]
 
 
 export default function TodoList01() {
+
+  const refInputTask = useRef()
   
   const [stateNewItem, setStateNewItem] = useState('')
   const [stateItems, setStateItems] = useState<TypeTodoList>([])
@@ -25,18 +27,9 @@ export default function TodoList01() {
   }, [stateItems, stateStatusItem])
 
 
-  const handleOnChangeInputTask = (e: Event) => {
+
+  const addItem = () => {
     
-    const inputTask = e.target as HTMLInputElement
-    setStateNewItem(inputTask.value)
-
-  }
-
-
-  const addItem = (e: Event) => {
-    
-    const inputTask = e.target as HTMLInputElement
-
     setStateItems(
       [
         ... stateItems,
@@ -50,13 +43,12 @@ export default function TodoList01() {
 
     console.log(stateItems)
 
-    inputTask.value = ''
+    setStateNewItem('')
   }
 
+  
   const removeItem = (id: number) => {
-
     setStateItems([...stateItems.filter(x => x.id !== id)])
-
   }
 
 
@@ -95,14 +87,14 @@ export default function TodoList01() {
       <article className={styles.tl1}>
         
         <div className={styles.tl1__header}>
-          <h4>TODO LIST BASIC</h4>
+          <h4>TODO LIST 02</h4>
         </div>
         
         <div className={styles.tl1__form}>
-          <input className={styles.tl1__form_input} type='text' onChange={handleOnChangeInputTask} value={stateNewItem}/>
-          {/* <input className={styles.tl1__form_input} type='text' onChange={e => setNewItem(e.target.value)} value={newItem}/> */}
+          {/* <input className={styles.tl1__form_input} type='text' onChange={handleOnChangeInputTask} value={stateNewItem}/> */}
+          <input ref={refInputTask} className={styles.tl1__form_input} type='text' onChange={e => setStateNewItem(e.target.value)} value={stateNewItem}/>
           <div className={styles.tl1__form_input_contb}>
-            <button className={styles.tl1__form_button} onClick={(e: Event) => addItem(e)}>
+            <button className={styles.tl1__form_button} onClick={() => addItem()}>
               <svg className={styles.tl1__form_svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle</title><path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
               Agregar
             </button>

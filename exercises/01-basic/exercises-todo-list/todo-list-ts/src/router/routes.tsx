@@ -7,7 +7,7 @@ import AboutAs from '../views/about/AboutDesktop.js'
 
 // Todo List's
 import SectionTL01 from '../views/todo-list-01/SectionTL01'
-import TodoList02 from '../views/todo-list-02/TodoList02.js'
+import SectionTL02 from '../views/todo-list-02/SectionTL02'
 
 
 const routes = () => {
@@ -19,7 +19,7 @@ const routes = () => {
                 <Route index path='/' element={<Home/>}/>
                 <Route path='/about' element={<AboutAs/>} />
                 <Route path='/todo-list-01' element={<SectionTL01/>}/>
-                <Route path='/todo-list-02' element={<TodoList02/>}/>
+                <Route path='/todo-list-02' element={<SectionTL02/>}/>
             </Routes>
         </>      
     )
