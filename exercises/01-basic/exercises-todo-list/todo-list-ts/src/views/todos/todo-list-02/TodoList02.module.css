@@ -1,0 +1,93 @@
+
+
+/* TL1 */
+.tl1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 28rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    background-color: #37474F;
+}
+
+
+/* TL1 FORM */
+.tl1__form {
+    display: flex;
+}
+.tl1__form_input {
+    padding: .5rem;
+    border-radius: .5rem;
+    border-style: none;;
+}
+.tl1__form_input_contb {
+    display: inline-block;
+}
+.tl1__form_svg {
+    width: 1.5rem;
+    fill: #FFAB00;
+    margin-right: .2rem;
+}
+.tl1__form_button {
+    padding: .3rem 1rem;
+    margin-left: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    color: #263238;
+    transition: .3s;
+
+    &:hover {
+        margin-left: .8rem;
+        box-shadow: .1rem .1rem .1rem .1rem rgba(255, 255, 255, .2);
+    }
+}
+
+
+/* TL1 TASKS*/
+.tl1__tasks_items {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.tl1__tasks_items_svg_point_true{
+    width: 1.2rem;
+    fill: #64DD17;
+    margin-right: .3rem;
+}
+.tl1__tasks_items_svg_point_false{
+    width: 1.2rem;
+    fill: #FFFFFF;
+    margin-right: .3rem;
+}
+
+.tl1__tasks_items_cont_svg {
+    margin-left: 3rem;
+}
+
+.tl1__tasks_items_a_svg_delete {
+    cursor: pointer;
+}
+.tl1__tasks_items_svg_delete {
+    width: 1.5rem;
+    fill: #EC407A;
+}
+.tl1__tasks_items_svg_edit {
+    width: 1.4rem;
+    fill: #FFD600;
+    margin: 0 .3rem;
+}
+
+.tl1__tasks_items_a_svg_check {
+    cursor: pointer;
+}
+.tl1__tasks_items_svg_check {
+    width: 1.5rem;
+    fill: #64DD17;
+}
