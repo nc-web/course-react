@@ -21,6 +21,7 @@ export default function TodoList01() {
   const [stateNewItem, setStateNewItem] = useState<string | undefined> ('')
   const [stateItems, setStateItems] = useState<TypeTodoList>([])
   const [stateStatusItem, setStateStatusItem] = useState(Boolean)
+  const [stateStatusEdit, setStateStatusEdit] = useState(Boolean)
 
   useEffect(() => {
     // console.log(stateNewItem)
