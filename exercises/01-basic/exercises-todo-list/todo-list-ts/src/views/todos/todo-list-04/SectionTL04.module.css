@@ -1,0 +1,35 @@
+
+.section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section__header {
+    display: grid;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.section__header_title {
+    color: #FFAB00;
+}
+
+.section__header_autor {
+    color: #00B0FF;
+}
+
+.section__header_tdetails {
+    color: #00B0FF;
+}
+
+
+.section__body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+    gap: 1rem;
+}
