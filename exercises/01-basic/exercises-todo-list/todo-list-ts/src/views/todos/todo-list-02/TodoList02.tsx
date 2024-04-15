@@ -18,55 +18,56 @@ export default function TodoList01() {
 
   const refInputTask = useRef<HTMLInputElement>()
   
-  const [stateNewItem, setStateNewItem] = useState<string | undefined> ('')
-  const [stateItems, setStateItems] = useState<TypeTodoList>([])
-  const [stateStatusItem, setStateStatusItem] = useState(Boolean)
+  const [lsNewTask, setLSNewTask] = useState<string | undefined> ('')
+  const [lsArrayTask, setLSArrayTask] = useState<TypeTodoList>([])
+  const [lsStatusTask, setLSStatusTask] = useState<boolean>(false)
 
   useEffect(() => {
-    // console.log(stateNewItem)
-    // console.log(stateItems)
-  }, [stateNewItem, stateItems, stateStatusItem])
+    // console.log(lsNewTask)
+    // console.log(lsArrayTask)
+    // console.log(lsStatusTask)
+  }, [lsNewTask, lsArrayTask, lsStatusTask])
 
 
   const handleOnChangeInputTask = () => {
-    setStateNewItem(refInputTask.current?.value)
+    setLSNewTask(refInputTask.current?.value)
   }
 
 
   const addItem = () => {
-    setStateItems(
+    setLSArrayTask(
       [
-        ... stateItems,
+        ... lsArrayTask,
         {
         id: Math.floor(Math.random() * 1000),
-        taks: stateNewItem,
+        taks: lsNewTask,
         status: false
         }
       ]
     )
 
-    console.log(stateItems)
-    setStateNewItem('')
+    console.log(lsArrayTask)
+    setLSNewTask('')
   }
 
   const removeItem = (id: number) => {
-    setStateItems([...stateItems.filter(x => x.id !== id)])
+    setLSArrayTask([...lsArrayTask.filter(x => x.id !== id)])
   }
 
 
   const checkItem = (id: number) => {
     
-    const taskFound = stateItems.find(x => x.id === id)
+    const taskFound = lsArrayTask.find(x => x.id === id)
     // console.log(taskFound)
 
     if (taskFound) {
       if (taskFound?.status === false) {
         taskFound.status = true
-        setStateStatusItem(true)
+        setLSStatusTask(true)
         console.log(taskFound)
       } else if (taskFound?.status === true){
         taskFound.status = false
-        setStateStatusItem(false)
+        setLSStatusTask(false)
         console.log(taskFound)
       }
     }
@@ -94,7 +95,7 @@ export default function TodoList01() {
         </div>
         
         <div className={styles.tl1__form}>
-          <input ref={refInputTask} className={styles.tl1__form_input} type='text' onChange={handleOnChangeInputTask} value={stateNewItem}/>
+          <input ref={refInputTask} className={styles.tl1__form_input} type='text' onChange={handleOnChangeInputTask} value={lsNewTask}/>
           <div className={styles.tl1__form_input_contb}>
             <button className={styles.tl1__form_button} onClick={addItem}>
               <svg className={styles.tl1__form_svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle</title><path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
@@ -107,7 +108,7 @@ export default function TodoList01() {
         <div className={styles.tl1__taks}>
           <ul>
             {
-              stateItems.map(x => {
+              lsArrayTask.map(x => {
                 return (
                   <div className={styles.tl1__tasks_items} key={x.id}>
                     
