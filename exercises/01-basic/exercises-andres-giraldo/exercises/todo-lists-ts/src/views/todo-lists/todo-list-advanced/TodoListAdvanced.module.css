@@ -1,0 +1,23 @@
+
+.tlb__form_inputtask {
+    padding: .5rem;
+    border-radius: .5rem;
+    border-style: none;;
+}
+
+.tlb__form_buttontask {
+    padding: .3rem 1rem;
+    margin-left: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    color: #263238;
+    transition: .3s;
+
+    &:hover {
+        margin-left: .8rem;
+        box-shadow: .1rem .1rem .1rem .1rem rgba(255, 255, 255, .2);
+    }
+}
