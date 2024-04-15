@@ -5,8 +5,6 @@ import { useState, useEffect } from 'react'
 import styles from './TodoListBasic.module.css'
 
 
-
-
 export default function TodoListBasic() {
 
     const [lsNewTask, setLSNewTask] = useState('')
