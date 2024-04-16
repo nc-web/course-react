@@ -6,16 +6,16 @@ import LayoutTodoDesktop from '../../../layouts/LayoutTodoDesktop'
 import styles from './SectionTL03.module.css' 
 
 // Todo List
-import TodoList01 from './TodoList03'
+import TodoList03 from './TodoList03'
 
 
-export default function SectionTL01 () {
+export default function SectionTL03 () {
   return (
     <LayoutTodoDesktop>
       <section className={styles.section} >
 
         <div className={styles.section__body} >
-          <TodoList01/>
+          <TodoList03/>
         </div>
 
         <div className={styles.section__header} >

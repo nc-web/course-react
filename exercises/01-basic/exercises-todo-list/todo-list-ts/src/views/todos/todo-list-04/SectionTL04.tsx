@@ -3,13 +3,13 @@
 import LayoutTodoDesktop from '../../../layouts/LayoutTodoDesktop'
 
 // Styles
-import styles from './SectionTL03.module.css' 
+import styles from './SectionTL04.module.css' 
 
 // Todo List
-import TodoList01 from './TodoList03'
+import TodoList01 from './TodoList04'
 
 
-export default function SectionTL01 () {
+export default function SectionTL04 () {
   return (
     <LayoutTodoDesktop>
       <section className={styles.section} >
@@ -19,7 +19,7 @@ export default function SectionTL01 () {
         </div>
 
         <div className={styles.section__header} >
-          <h2 className={styles.section__header_title} > EXERCISE TODO LIST 03 </h2>
+          <h2 className={styles.section__header_title} > EXERCISE TODO LIST 04 </h2>
           <div>
             <h4 className={styles.section__header_autor}>Autor: </h4>
             <p>Andres Giraldo Arenas</p>  

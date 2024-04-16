@@ -9,6 +9,7 @@ import AboutAs from '../views/about/AboutDesktop.js'
 import SectionTL01 from '../views/todos/todo-list-01/SectionTL01'
 import SectionTL02 from '../views/todos/todo-list-02/SectionTL02'
 import SectionTL03 from '../views/todos/todo-list-03/SectionTL03'
+import SectionTL04 from '../views/todos/todo-list-04/SectionTL04'
 
 
 const routes = () => {
@@ -22,6 +23,7 @@ const routes = () => {
                 <Route path='/todo-list-01' element={<SectionTL01/>}/>
                 <Route path='/todo-list-02' element={<SectionTL02/>}/>
                 <Route path='/todo-list-03' element={<SectionTL03/>}/>
+                <Route path='/todo-list-04' element={<SectionTL04/>}/>
             </Routes>
         </>      
     )

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 // Styles
 import styles from './Card03.module.css'
 
-export default function Card01() {
+export default function Card03() {
 
     return(
         <Link to='/todo-list-03' className={styles.link}>
