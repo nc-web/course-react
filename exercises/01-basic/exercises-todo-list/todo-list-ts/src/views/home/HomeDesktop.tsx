@@ -9,6 +9,7 @@ import LayoutDesktop from "../../layouts/LayoutMainDesktop"
 import Card01 from './cards/Card01'
 import Card02 from './cards/Card02'
 import Card03 from './cards/Card03'
+import Card04 from './cards/Card04'
 
 export default function HomeDesktop() {
 
@@ -23,6 +24,7 @@ export default function HomeDesktop() {
                     <Card01/>
                     <Card02/>
                     <Card03/>
+                    <Card04/>
                 </div>
             </section>
             

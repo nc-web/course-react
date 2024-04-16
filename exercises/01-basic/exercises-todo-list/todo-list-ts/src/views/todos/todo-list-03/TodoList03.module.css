@@ -19,7 +19,11 @@
 .tl1__form_input {
     padding: .5rem;
     border-radius: .5rem;
-    border-style: none;;
+    border-style: none;
+
+    &:focus {
+        outline: none;
+    }
 }
 .tl1__form_input_contb {
     display: inline-block;
@@ -89,4 +93,67 @@
 .tl1__tasks_items_svg_check {
     width: 1.5rem;
     fill: #64DD17;
+}
+
+
+/* EDIT TASK */
+.et {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    padding: .5rem;
+    background-color: #FFAB00;
+    border-radius: .5rem;
+}
+.et__input_edit_task {
+    padding: .5rem;
+    border-radius: .5rem;
+    border-style: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+.et__button_cancel_task {
+    padding: .3rem 1rem;
+    margin-left: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    color: #263238;
+    transition: .3s;
+
+    &:hover {
+        margin-left: .8rem;
+        box-shadow: .1rem .1rem .1rem .1rem rgba(255, 255, 255, .2);
+    }
+}
+.et__button_edit_task {
+    padding: .3rem 1rem;
+    margin-left: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+    color: #263238;
+    transition: .3s;
+
+    &:hover {
+        margin-left: .8rem;
+        box-shadow: .1rem .1rem .1rem .1rem rgba(255, 255, 255, .2);
+    }
+}
+.et__svg_cancel {
+    width: 1.4rem;
+    fill: #EC407A;
+    margin: 0 .3rem;
+}
+.et__svg_edit {
+    width: 1.4rem;
+    fill: #64DD17;
+    margin: 0 .3rem;
 }

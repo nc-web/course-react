@@ -20,7 +20,11 @@
 .tl1__form_input {
     padding: .5rem;
     border-radius: .5rem;
-    border-style: none;;
+    border-style: none;
+
+    &:focus {
+        outline: none;
+    }
 }
 .tl1__form_input_contb {
     display: inline-block;

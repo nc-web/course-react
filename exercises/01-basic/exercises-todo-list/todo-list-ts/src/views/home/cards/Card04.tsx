@@ -8,7 +8,7 @@ import styles from './Card04.module.css'
 export default function Card04() {
 
     return(
-        <Link to='/todo-list-03' className={styles.link}>
+        <Link to='/todo-list-04' className={styles.link}>
             <article className={styles.card}>
                 <div className={styles.card__header}>
                     <h3 className={styles.card__header_title}>Todo List 04</h3>

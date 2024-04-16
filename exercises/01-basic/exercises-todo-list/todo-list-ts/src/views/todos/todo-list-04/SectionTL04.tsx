@@ -6,7 +6,7 @@ import LayoutTodoDesktop from '../../../layouts/LayoutTodoDesktop'
 import styles from './SectionTL04.module.css' 
 
 // Todo List
-import TodoList01 from './TodoList04'
+import TodoList04 from './TodoList04'
 
 
 export default function SectionTL04 () {
@@ -15,7 +15,7 @@ export default function SectionTL04 () {
       <section className={styles.section} >
 
         <div className={styles.section__body} >
-          <TodoList01/>
+          <TodoList04/>
         </div>
 
         <div className={styles.section__header} >
