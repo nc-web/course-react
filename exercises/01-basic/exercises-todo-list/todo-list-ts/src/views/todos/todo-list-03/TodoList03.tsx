@@ -7,7 +7,7 @@ import styles from './TodoList03.module.css'
 
 interface ITodoList {
   id: number,
-  taks?: string,
+  task?: string,
   status?: boolean
 }
 
@@ -19,6 +19,7 @@ export default function TodoList03() {
   const refInputTask = useRef<HTMLInputElement>()
   
   const [lsNewTask, setLSNewTask] = useState<string | undefined>('')
+  const [lsEditTaskID, setLSEditTaskID] = useState<number | undefined>(0)
   const [lsEditTask, setLSEditTask] = useState<string | undefined>('')
   const [lsArrayTask, setLSArrayTask] = useState<TypeTodoList>([])
   const [lsStatusTask, setLSStatusTask] = useState<boolean>(false)
@@ -42,7 +43,7 @@ export default function TodoList03() {
         ... lsArrayTask,
         {
         id: Math.floor(Math.random() * 1000),
-        taks: lsNewTask,
+        task: lsNewTask,
         status: false
         }
       ]
@@ -87,11 +88,22 @@ export default function TodoList03() {
   }
 
 
-  const editTask = (id: number) => {
+  const editTask = (id: number, task: string) => {
+    
     setLSStatusEditTask(true)
-    setLSEditTask(lsNewTask)
-    console.log('Edited')
+    setLSEditTask(task)
+    setLSEditTaskID(id)
+
+    
   }
+
+  const editTaskSaved = () => {
+    
+    // lsArrayTask.sli
+
+    console.log('Edited: ', lsEditTaskID, lsEditTask)
+  }
+
 
   const EditTask = () => {
     const cancelEditTask = () => {
@@ -101,7 +113,7 @@ export default function TodoList03() {
     return(
       <>
         <article className={styles.et}>
-          <input className={styles.et__input_edit_task} type='text' placeholder='Edit Task' value={lsEditTask}/>
+          <input className={styles.et__input_edit_task} type='text' placeholder={lsEditTask} />
           <button onClick={cancelEditTask} className={styles.et__button_cancel_task} type='button'>
             <svg className={styles.et__svg_cancel} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cancel</title><path d="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z" /></svg>
             Cancel
@@ -158,12 +170,12 @@ export default function TodoList03() {
                       )
                     }
                     
-                    <p>{x.id} - {x.taks} - {x.status}</p>
+                    <p>{x.id} - {x.task} - {x.status}</p>
                     <div className={styles.tl1__tasks_items_cont_svg}>
                       <a className={styles.tl1__tasks_items_a_svg_delete} onClick={() => removeTask(x.id)}>
                         <svg className={styles.tl1__tasks_items_svg_delete} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>
                       </a>
-                      <a className={styles.tl1__tasks_items_a_svg_check} onClick={() => editTask(x.id)}>
+                      <a className={styles.tl1__tasks_items_a_svg_check} onClick={() => editTask(x.id, x.task)}>
                         <svg className={styles.tl1__tasks_items_svg_edit} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                       </a>
                       <a className={styles.tl1__tasks_items_a_svg_check} onClick={() => checkTask(x.id)}>
