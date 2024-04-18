@@ -19,6 +19,7 @@ export default function TodoList03() {
   const refInputTask = useRef<HTMLInputElement>()
   
   const [lsNewTask, setLSNewTask] = useState<string | undefined>('')
+  const [lsEditTask, setLSEditTask] = useState<string | undefined>('')
   const [lsArrayTask, setLSArrayTask] = useState<TypeTodoList>([])
   const [lsStatusTask, setLSStatusTask] = useState<boolean>(false)
   const [lsStatusEditTask, setLSStatusEditTask] = useState<boolean>(false)
@@ -27,7 +28,7 @@ export default function TodoList03() {
     // console.log(lsNewTask)
     // console.log(lsArrayTask)
     // console.log(lsStatusTask)
-  }, [lsNewTask, lsArrayTask, lsStatusTask])
+  }, [lsNewTask, lsEditTask, lsArrayTask, lsStatusTask])
 
 
   const handleOnChangeInputTask = () => {
@@ -88,6 +89,7 @@ export default function TodoList03() {
 
   const editTask = (id: number) => {
     setLSStatusEditTask(true)
+    setLSEditTask(lsNewTask)
     console.log('Edited')
   }
 
@@ -99,7 +101,7 @@ export default function TodoList03() {
     return(
       <>
         <article className={styles.et}>
-          <input className={styles.et__input_edit_task} type='text' placeholder='Edit Task'/>
+          <input className={styles.et__input_edit_task} type='text' placeholder='Edit Task' value={lsEditTask}/>
           <button onClick={cancelEditTask} className={styles.et__button_cancel_task} type='button'>
             <svg className={styles.et__svg_cancel} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cancel</title><path d="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z" /></svg>
             Cancel
