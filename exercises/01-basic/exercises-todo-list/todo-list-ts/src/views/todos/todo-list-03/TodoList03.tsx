@@ -108,16 +108,16 @@ export default function TodoList03() {
     const textEditTask = lsArrayTask.map(x => {
       if (x.id === lsEditTaskID) {
         return {
-          ...x, id: lsEditTaskID, task: 'Hola', status: false
+          ...x, task: 'Hola',
         }
       } else {
         console.log('')
       }
     })
 
-    console.log('Edited: ', lsEditTaskID, lsEditTask)
 
-    setLSArrayTask(textEditTask)
+    // setLSArrayTask(textEditTask)
+    console.log('Edited: ', lsEditTaskID, lsEditTask)
     setLSStatusEditTask(false)
 
   }
