@@ -7,7 +7,7 @@ import styles from './TodoList03.module.css'
 
 interface ITodoList {
   id: number,
-  task?: string,
+  task?: string | undefined,
   status?: boolean
 }
 
