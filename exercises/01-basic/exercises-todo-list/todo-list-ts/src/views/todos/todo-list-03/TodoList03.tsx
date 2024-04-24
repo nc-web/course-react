@@ -38,13 +38,13 @@ export default function TodoList03() {
     setLSNewTask(refInputTask.current?.value)
   }
 
-  const handleOnChangeEditTask = () => {
-    // const editTask = e.target as HTMLInputElement
-    // setLSEditTask(editTask.value)
-    // console.log(editTask.value)
+  // const handleOnChangeEditTask = () => {
+  //   // const editTask = e.target as HTMLInputElement
+  //   // setLSEditTask(editTask.value)
+  //   // console.log(editTask.value)
     
-    setLSEditTask(refInputEditTask.current?.value)
-  }
+  //   setLSEditTask(refInputEditTask.current?.value)
+  // }
 
 
   const addTask = () => {
