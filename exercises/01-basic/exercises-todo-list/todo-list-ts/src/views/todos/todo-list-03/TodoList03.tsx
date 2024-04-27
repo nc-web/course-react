@@ -33,11 +33,9 @@ export default function TodoList03() {
     console.log(lsEditTask)
   }, [lsNewTask, lsEditTask, lsArrayTask, lsStatusTask])
 
-
   const handleOnChangeInputTask = () => {
     setLSNewTask(refInputTask.current?.value)
   }
-
 
   const addTask = () => {
     setLSArrayTask(
@@ -89,39 +87,11 @@ export default function TodoList03() {
     // })
   }
 
-
   const editTask = (id: number, task: string) => {
-    
     setLSEditTaskID(id)
     setLSEditTask(task)
     setLSStatusEditTask(true)
-
     console.log(lsEditTaskID)
-
-  }
-
-  const editTaskSaved = () => {
-
-    console.log('Entro a Edit Task Saved')
-    // const editTask = e.target as HTMLInputElement
-    setLSEditTask(refInputEditTask.current?.value)
-    console.log(lsEditTask)
-    console.log(lsEditTaskID)
-
-    // setLSEditTask(refInputEditTask.current?.value)
-
-    lsArrayTask.map(x => {
-      if (x.id === lsEditTaskID) {
-        console.log('Entro a Array Edit Task Saved')
-        x.task = lsEditTask
-      }
-    })
-
-
-    // setLSArrayTask(textEditTask)
-    // console.log('Edited: ', lsEditTaskID, lsEditTask)
-    setLSStatusEditTask(false)
-
   }
 
 
@@ -136,6 +106,30 @@ export default function TodoList03() {
       // console.log(editTask.value)
       
       setLSEditTask(refInputEditTask.current?.value)
+    }
+
+    const editTaskSaved = () => {
+  
+      console.log('Entro a Edit Task Saved')
+      // const editTask = e.target as HTMLInputElement
+      //const inputEditTask = document.querySelector('#inputEditTask')
+      setLSEditTask(refInputEditTask.current?.value)
+      console.log(lsEditTask)
+      console.log(lsEditTaskID)
+  
+      // setLSEditTask(refInputEditTask.current?.value)
+  
+      lsArrayTask.map(x => {
+        if (x.id === lsEditTaskID) {
+          console.log('Entro a Array Edit Task Saved')
+          x.task = lsEditTask
+        }
+      })
+  
+      // setLSArrayTask(textEditTask)
+      // console.log('Edited: ', lsEditTaskID, lsEditTask)
+      setLSStatusEditTask(false)
+  
     }
     
     return(
