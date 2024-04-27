@@ -20,8 +20,8 @@ export default function TodoList03() {
   const refInputEditTask = useRef<HTMLInputElement>()
   
   const [lsNewTask, setLSNewTask] = useState<string | undefined>('')
-  const [lsEditTaskID, setLSEditTaskID] = useState<number>(0)
-  const [lsEditTask, setLSEditTask] = useState<string>('')
+  const [lsEditTaskID, setLSEditTaskID] = useState<number>()
+  const [lsEditTask, setLSEditTask] = useState<string | undefined>('')
   const [lsArrayTask, setLSArrayTask] = useState<TypeTodoList>([])
   const [lsStatusTask, setLSStatusTask] = useState<boolean>(false)
   const [lsStatusEditTask, setLSStatusEditTask] = useState<boolean>(false)
@@ -38,13 +38,13 @@ export default function TodoList03() {
     setLSNewTask(refInputTask.current?.value)
   }
 
-  // const handleOnChangeEditTask = () => {
-  //   // const editTask = e.target as HTMLInputElement
-  //   // setLSEditTask(editTask.value)
-  //   // console.log(editTask.value)
+  const handleOnChangeEditTask = (e: Event) => {
+    const editTask = e.target as HTMLInputElement
+    setLSEditTask(editTask.value)
+    console.log(editTask.value)
     
-  //   setLSEditTask(refInputEditTask.current?.value)
-  // }
+    // setLSEditTask(refInputEditTask.current?.value)
+  }
 
 
   const addTask = () => {
@@ -110,19 +110,18 @@ export default function TodoList03() {
 
   const editTaskSaved = () => {
 
+    console.log('Entro a Edit Task Saved')
     // const editTask = e.target as HTMLInputElement
     setLSEditTask(refInputEditTask.current?.value)
     console.log(lsEditTask)
+    console.log(lsEditTaskID)
 
     // setLSEditTask(refInputEditTask.current?.value)
 
-    const textEditTask = lsArrayTask.map(x => {
+    lsArrayTask.map(x => {
       if (x.id === lsEditTaskID) {
-        return {
-          ...x, task: 'Hola',
-        }
-      } else {
-        console.log('No se encontro el ID')
+        console.log('Entro a Array Edit Task Saved')
+        x.task = 'Hola'
       }
     })
 
@@ -142,7 +141,7 @@ export default function TodoList03() {
     return(
       <>
         <article className={styles.et}>
-          <input id='inputEditTask' ref={refInputEditTask} className={styles.et__input_edit_task} type='text' placeholder={lsEditTask} />
+          <input id='inputEditTask' ref={refInputEditTask} onChange={() => handleOnChangeEditTask} className={styles.et__input_edit_task} type='text' />
           <button onClick={cancelEditTask} className={styles.et__button_cancel_task} type='button'>
             <svg className={styles.et__svg_cancel} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cancel</title><path d="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z" /></svg>
             Cancel
