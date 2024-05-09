@@ -11,5 +11,7 @@ export default function useHello() {
 
     // setLSHello('Hola Hook Hello')
 
-    return console.log(lsHello)
+    return lsHello
+    // return console.log(lsHello)
+    // return <h2>{lsHello}</h2>
 }
