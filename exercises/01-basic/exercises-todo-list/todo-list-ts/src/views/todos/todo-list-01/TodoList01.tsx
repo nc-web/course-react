@@ -40,7 +40,7 @@ export default function TodoList01() {
         </div>
         
         <div className={styles.tl1__form}>
-          <input className={styles.tl1__form_input} type='text' onChange={() => handleOnChangeInputTask} value={lsNewTask} />
+          <input className={styles.tl1__form_input} type='text' onChange={handleOnChangeInputTask} value={lsNewTask} />
           {/* <input className={styles.tl1__form_input} type='text' onChange={e => setNewItem(e.target.value)} value={newItem}/> */}
           <div className={styles.tl1__form_input_contb}>
             <button className={styles.tl1__form_button} onClick={addItem}>
