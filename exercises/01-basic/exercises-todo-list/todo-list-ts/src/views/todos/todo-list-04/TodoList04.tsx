@@ -11,7 +11,15 @@ interface ITodoList {
   status?: boolean
 }
 
+interface ITodoListAPI {
+  userId: number,
+  id: number,
+  title: string,
+  body: string
+}
+
 type TypeTodoList = ITodoList[]
+type TypeTodoListAPI = ITodoListAPI[]
 
 
 export default function TodoList04() {
@@ -20,6 +28,7 @@ export default function TodoList04() {
   
   const [lsNewTask, setLSNewTask] = useState<string | undefined> ('')
   const [lsArrayTask, setLSArrayTask] = useState<TypeTodoList>([])
+  const [lsArrayTaskAPI, setLSArrayTaskAPI] = useState<TypeTodoListAPI>([])
   const [lsStatusTask, setLSStatusTask] = useState<boolean>(false)
 
   useEffect(() => {
@@ -27,6 +36,13 @@ export default function TodoList04() {
     // console.log(lsArrayTask)
     // console.log(lsStatusTask)
   }, [lsNewTask, lsArrayTask, lsStatusTask])
+
+  fetch('https://jsonplaceholder.typicode.com/posts')
+  .then((res) => res.json())
+  .then((res) => console.log('API:', res))
+  .then((res) => setLSArrayTaskAPI())
+  .catch((err) => console.error('API Error: ', err))
+  
 
 
   const handleOnChangeInputTask = () => {
