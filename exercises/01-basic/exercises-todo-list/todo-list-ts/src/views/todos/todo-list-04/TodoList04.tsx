@@ -28,23 +28,29 @@ export default function TodoList04() {
   
   const [lsNewTask, setLSNewTask] = useState<string | undefined> ('')
   const [lsArrayTask, setLSArrayTask] = useState<TypeTodoList>([])
-  const [lsArrayTaskAPI, setLSArrayTaskAPI] = useState<TypeTodoListAPI>([])
+  const [lsArrayTaskAPI, setLSArrayTaskAPI] = useState<void>([])
   const [lsStatusTask, setLSStatusTask] = useState<boolean>(false)
 
-  useEffect(() => {
-    // console.log(lsNewTask)
-    // console.log(lsArrayTask)
-    // console.log(lsStatusTask)
-  }, [lsNewTask, lsArrayTask, lsStatusTask])
+  // useEffect(() => {
+  //   // console.log(lsNewTask)
+  //   // console.log(lsArrayTask)
+  //   // console.log(lsStatusTask)
+  // }, [lsNewTask, lsArrayTask, lsStatusTask])
 
-  fetch('https://jsonplaceholder.typicode.com/posts')
-  .then((res) => res.json())
-  .then((res) => console.log('API:', res))
-  .then((res) => setLSArrayTaskAPI())
-  .catch((err) => console.error('API Error: ', err))
+  useEffect(async () => {
+    try {
+      const url = 'https://jsonplaceholder.typicode.com/users'
+      const dataAPI = await fetch(url)
+      const dataJson = await dataAPI.json()
+      console.log(dataJson)
+      setLSArrayTaskAPI(dataJson)
+    } catch (error) {
+      console.log(error)
+    }
+  }, [])
+
+  console.info('Set LS Array API:', lsArrayTaskAPI)
   
-
-
   const handleOnChangeInputTask = () => {
     setLSNewTask(refInputTask.current?.value)
   }
