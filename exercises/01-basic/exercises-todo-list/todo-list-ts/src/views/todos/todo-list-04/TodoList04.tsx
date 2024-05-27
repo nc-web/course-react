@@ -49,7 +49,7 @@ export default function TodoList04() {
     }
   }, [])
 
-  console.info('Set LS Array API:', lsArrayTaskAPI)
+  // console.info('Set LS Array API:', lsArrayTaskAPI)
   
   const handleOnChangeInputTask = () => {
     setLSNewTask(refInputTask.current?.value)
